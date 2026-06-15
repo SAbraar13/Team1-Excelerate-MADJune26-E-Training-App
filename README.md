@@ -1,27 +1,20 @@
 # E-Training App
 
-## About the Project
+## Project Overview
 
-The E-Training App is a mobile application developed using Flutter. The purpose of this app is to provide learners with an easy way to access training programs, educational events, announcements, and learning resources in one place.
+The E-Training App is a Flutter-based mobile application developed as part of the Excelerate Mobile App Development Internship Program. The application aims to provide learners with a centralized platform to explore training programs, view announcements, access learning opportunities, and manage their profiles.
 
-Instead of searching through multiple platforms for information, users can use the E-Training App to stay updated, explore opportunities, and manage their learning activities more efficiently.
-
----
-
-## Project Vision
-
-Our vision is to create a simple and user-friendly platform that connects learners and administrators. The app aims to make training programs and educational opportunities more accessible while improving communication and engagement within the learning community.
+The project focuses on creating a simple, user-friendly, and visually appealing learning platform that improves accessibility and engagement for learners.
 
 ---
 
-## Objectives
+## Project Objectives
 
-* Provide a single platform for training-related activities.
-* Help learners discover programs and events easily.
-* Improve communication between learners and administrators.
-* Allow users to receive important announcements and updates.
-* Collect feedback to improve future programs and events.
-* Create a smooth and accessible learning experience.
+* Provide a centralized platform for training-related activities.
+* Allow learners to explore available programs easily.
+* Improve communication through announcements and updates.
+* Create a structured and user-friendly mobile experience.
+* Build a scalable foundation for future learning features.
 
 ---
 
@@ -29,45 +22,73 @@ Our vision is to create a simple and user-friendly platform that connects learne
 
 ### Learners
 
-* Browse available programs.
-* Register for events.
-* View announcements.
-* Submit feedback.
-* Manage their profiles.
+* Browse available programs
+* View program details
+* Access announcements
+* Manage profile information
 
 ### Administrators
 
-* Manage programs and events.
-* Publish announcements.
-* Review user feedback.
-* Track participation and engagement.
+* Manage programs
+* Publish announcements
+* Monitor learner engagement
 
 ---
 
-## Key Features
+## Features Implemented (Week 2)
 
-* User Registration and Login.
-* Home Dashboard.
-* Program Listing.
-* Program Details.
-* Event Registration.
-* Announcements and Notifications.
-* Feedback Submission.
-* User Profile Management.
+### Login Screen
+
+* Email Input Field
+* Password Input Field
+* Login Button
+
+### Home Screen
+
+* Welcome Section
+* Programs Section
+* Announcements Section
+* Quick Links
+* Profile Access
+
+### Program Listing Screen
+
+* Program Cards
+* Program Information
+* View Details Navigation
+
+### Program Details Screen
+
+* Detailed Program Information
+* Schedule Details
+* Eligibility Information
+* Registration Button
 
 ---
 
 ## Navigation Flow
 
-User Opens App
-↓
-Login / Sign Up
-↓
-Home Dashboard
-├── Programs
-├── Events
-├── Feedback
-└── Profile
+```text
+Login Screen
+      ↓
+Home Screen
+      ↓
+Program Listing Screen
+      ↓
+Program Details Screen
+```
+
+---
+
+## Branding
+
+The application follows a consistent branding strategy using:
+
+* Unified Color Palette
+* Consistent Typography
+* Consistent Icons
+* Reusable UI Components
+* Responsive Layout Design
 
 ---
 
@@ -76,35 +97,91 @@ Home Dashboard
 * Flutter
 * Dart
 * GitHub
-* Android Studio
 * Visual Studio Code
+* Android Emulator
 
 ---
 
-## Team
+## Project Structure
 
-This project is being developed as part of the Flutter Internship Program. The team is working collaboratively using GitHub for version control and project management.
+```text
+E-Training-App
+│
+├── Wireframes
+├── lib
+│   ├── screens
+│   ├── widgets
+│   └── main.dart
+│
+├── android
+├── ios
+├── test
+├── pubspec.yaml
+└── README.md
+```
+
+---
+
+## Screenshots
+
+### Login Screen
+
+(Add Screenshot Here)
+
+### Home Screen
+
+(Add Screenshot Here)
+
+### Program Listing Screen
+
+(Add Screenshot Here)
+
+### Program Details Screen
+
+(Add Screenshot Here)
+
+---
+
+## Week 1 Deliverables
+
+* App Proposal Document
+* Wireframe Designs
+* Navigation Flow
+* GitHub Repository Setup
+
+---
+
+## Week 2 Deliverables
+
+* Functional Login Screen
+* Functional Home Screen
+* Functional Program Listing Screen
+* Functional Program Details Screen
+* Navigation Implementation
+* Branding Integration
+* GitHub Repository Update
 
 ---
 
 ## Future Scope
 
-In future versions, the application can include:
-
-* Progress Tracking
-* Course Completion Certificates
-* Real-Time Notifications
-* Advanced Search and Filters
-* Learning Analytics Dashboard
+* User Authentication
 * Firebase Integration
+* Notifications
+* Program Registration System
+* Progress Tracking
+* Learning Analytics Dashboard
 
 ---
 
-## Repository Information
+## Repository
 
-This repository contains:
+GitHub Repository:
 
-* Flutter project files
-* Wireframe designs
-* Project documentation
-* Source code and future updates
+(Add Repository Link Here)
+
+---
+
+## Conclusion
+
+The E-Training App has successfully progressed from wireframe planning to a functional Flutter UI prototype. The application currently includes four interactive screens, navigation between screens, and consistent branding. This provides a strong foundation for implementing additional functionality in future development phases.
