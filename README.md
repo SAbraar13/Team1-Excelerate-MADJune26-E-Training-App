@@ -110,37 +110,24 @@ E-Training-App
 ├── Wireframes
 ├── lib
 │   ├── screens
-│   ├── widgets
+│   │       ├── home_screen
+│   │       ├── login_screen
+│   │       ├── program_listing_screen
+│   │       ├── program_details_screen
+│   │
+│   │── widgets
+│   │       ├── category_card
+│   │       ├── program_card
+│   │
 │   └── main.dart
 │
 ├── android
-├── ios
+├── web
 ├── test
 ├── pubspec.yaml
 └── README.md
 ```
 
----
-
-## Screenshots
-
-### Login Screen
-
-(Add Screenshot Here)
-
-### Home Screen
-
-(Add Screenshot Here)
-
-### Program Listing Screen
-
-(Add Screenshot Here)
-
-### Program Details Screen
-
-(Add Screenshot Here)
-
----
 
 ## Week 1 Deliverables
 
@@ -159,7 +146,7 @@ E-Training-App
 * Functional Program Details Screen
 * Navigation Implementation
 * Branding Integration
-* GitHub Repository Update
+
 
 ---
 
@@ -172,15 +159,6 @@ E-Training-App
 * Progress Tracking
 * Learning Analytics Dashboard
 
----
-
-## Repository
-
-GitHub Repository:
-
-(Add Repository Link Here)
-
----
 
 ## Conclusion
 
