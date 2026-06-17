@@ -1,0 +1,37 @@
+[
+  {
+    "title": "Flutter App Development Internship",
+    "duration": "12 Weeks",
+    "level": "Beginner",
+    "description": "Learn Flutter and build modern mobile applications.",
+    "icon": "phone_android"
+  },
+  {
+    "title": "AI-Powered Data Analysis Internship",
+    "duration": "10 Weeks",
+    "level": "Intermediate",
+    "description": "Learn data analysis, visualization and AI tools.",
+    "icon": "analytics"
+  },
+  {
+    "title": "Prompt Engineering Research Program",
+    "duration": "8 Weeks",
+    "level": "Intermediate",
+    "description": "Research and develop advanced prompt engineering techniques.",
+    "icon": "psychology"
+  },
+  {
+    "title": "Data Visualization Training Program",
+    "duration": "8 Weeks",
+    "level": "Beginner",
+    "description": "Learn dashboards, charts and data storytelling.",
+    "icon": "bar_chart"
+  },
+  {
+    "title": "Full Stack Web Development Internship",
+    "duration": "16 Weeks",
+    "level": "Advanced",
+    "description": "Build responsive web applications using frontend and backend technologies.",
+    "icon": "web"
+  }
+]
