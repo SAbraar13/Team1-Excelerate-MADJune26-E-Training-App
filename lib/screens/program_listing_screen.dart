@@ -12,41 +12,42 @@ class _ProgramListingScreenState extends State<ProgramListingScreen> {
 
   final List<Map<String, dynamic>> programs = [
     {
-      "title": "Flutter Development",
+      "title": "Flutter App Development Internship",
       "duration": "12 Weeks",
       "level": "Beginner",
-      "description":
-          "Learn Flutter from scratch and build mobile applications.",
+      "description": "Learn Flutter and build modern mobile applications.",
       "icon": Icons.phone_android,
     },
     {
-      "title": "UI/UX Design",
+      "title": "AI-Powered Data Analysis Internship",
       "duration": "10 Weeks",
       "level": "Intermediate",
-      "description":
-          "Master user interface and user experience design principles.",
-      "icon": Icons.design_services,
-    },
-    {
-      "title": "Data Science",
-      "duration": "14 Weeks",
-      "level": "Advanced",
-      "description": "Learn data analysis, visualization and machine learning.",
+      "description": "Learn data analysis, visualization, and AI tools.",
       "icon": Icons.analytics,
     },
     {
-      "title": "Digital Marketing",
+      "title": "Prompt Engineering Research Program",
       "duration": "8 Weeks",
-      "level": "Beginner",
-      "description": "Understand digital marketing strategies and tools.",
-      "icon": Icons.campaign,
+      "level": "Intermediate",
+      "description":
+          "Research and develop advanced prompt engineering techniques.",
+      "icon": Icons.psychology,
     },
     {
-      "title": "Machine Learning",
+      "title": "Data Visualization Training Program",
+      "duration": "8 Weeks",
+      "level": "Beginner",
+      "description":
+          "Learn data storytelling, dashboards, charts, and visualization tools.",
+      "icon": Icons.bar_chart,
+    },
+    {
+      "title": "Full Stack Web Development Internship",
       "duration": "16 Weeks",
       "level": "Advanced",
-      "description": "Build predictive models using modern ML techniques.",
-      "icon": Icons.psychology,
+      "description":
+          "Build responsive web applications using frontend and backend technologies.",
+      "icon": Icons.web,
     },
   ];
 

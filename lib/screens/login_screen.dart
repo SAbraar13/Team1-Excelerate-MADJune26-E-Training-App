@@ -31,7 +31,6 @@ class _LoginScreenState extends State<LoginScreen> {
     return Scaffold(
       body: Stack(
         children: [
-          // Top Decorative Section
           Container(
             height: size.height * 0.35,
             decoration: const BoxDecoration(
@@ -45,196 +44,198 @@ class _LoginScreenState extends State<LoginScreen> {
 
           SafeArea(
             child: SingleChildScrollView(
-              padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 20),
-              child: Column(
-                children: [
-                  const SizedBox(height: 30),
+              child: Padding(
+                padding: const EdgeInsets.symmetric(
+                  horizontal: 24,
+                  vertical: 20,
+                ),
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    const SizedBox(height: 12),
 
-                  // Logo Area
-                  Hero(
-                    tag: 'app_logo',
-                    child: CircleAvatar(
-                      radius: 45,
-                      backgroundColor: Colors.white,
-                      child: Icon(
-                        Icons.school_rounded,
-                        size: 50,
-                        color: Color(0xFF1BA7A6),
+                    Hero(
+                      tag: 'app_logo',
+                      child: CircleAvatar(
+                        radius: 45,
+                        backgroundColor: Colors.white,
+                        child: Icon(
+                          Icons.school_rounded,
+                          size: 50,
+                          color: Color(0xFF1BA7A6),
+                        ),
                       ),
                     ),
-                  ),
 
-                  const SizedBox(height: 20),
+                    const SizedBox(height: 10),
 
-                  // App Name
-                  const Text(
-                    "E-TRAINING APP",
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 26,
-                      fontWeight: FontWeight.bold,
-                      letterSpacing: 1,
+                    const Text(
+                      "E-TRAINING APP",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 22,
+                        fontWeight: FontWeight.bold,
+                        letterSpacing: 1,
+                      ),
                     ),
-                  ),
 
-                  const SizedBox(height: 8),
+                    const SizedBox(height: 6),
 
-                  const Text(
-                    "Learn • Grow • Succeed",
-                    style: TextStyle(color: Colors.white70, fontSize: 15),
-                  ),
-
-                  const SizedBox(height: 50),
-
-                  // Login Card
-                  Card(
-                    elevation: 8,
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(24),
+                    const Text(
+                      "Powered by Excelerate",
+                      style: TextStyle(
+                        color: Colors.white70,
+                        fontSize: 14,
+                        fontWeight: FontWeight.w500,
+                      ),
                     ),
-                    child: Padding(
-                      padding: const EdgeInsets.all(24),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          const Text(
-                            "Welcome Back 👋",
-                            style: TextStyle(
-                              fontSize: 26,
-                              fontWeight: FontWeight.bold,
-                              color: Color(0xFF0D1B2A),
-                            ),
-                          ),
 
-                          const SizedBox(height: 8),
+                    const SizedBox(height: 8),
 
-                          Text(
-                            "Login to continue learning",
-                            style: TextStyle(color: Colors.grey.shade600),
-                          ),
+                    const Text(
+                      "Access internships, programs and learning opportunities.",
+                      textAlign: TextAlign.center,
+                      style: TextStyle(color: Colors.white70, fontSize: 15),
+                    ),
 
-                          const SizedBox(height: 30),
+                    const SizedBox(height: 20),
 
-                          // Email Field
-                          TextField(
-                            controller: _emailController,
-                            keyboardType: TextInputType.emailAddress,
-                            decoration: const InputDecoration(
-                              labelText: "Email",
-                              prefixIcon: Icon(Icons.email_outlined),
-                            ),
-                          ),
-
-                          const SizedBox(height: 18),
-
-                          // Password Field
-                          TextField(
-                            controller: _passwordController,
-                            obscureText: _obscurePassword,
-                            decoration: InputDecoration(
-                              labelText: "Password",
-                              prefixIcon: const Icon(
-                                Icons.lock_outline_rounded,
+                    Card(
+                      elevation: 8,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(24),
+                      ),
+                      child: Padding(
+                        padding: const EdgeInsets.all(16),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            const Text(
+                              "Welcome to Excelerate 👋",
+                              style: TextStyle(
+                                fontSize: 22,
+                                fontWeight: FontWeight.bold,
+                                color: Color(0xFF0D1B2A),
                               ),
-                              suffixIcon: IconButton(
-                                icon: Icon(
-                                  _obscurePassword
-                                      ? Icons.visibility_off
-                                      : Icons.visibility,
+                            ),
+
+                            const SizedBox(height: 10),
+
+                            TextField(
+                              controller: _emailController,
+                              keyboardType: TextInputType.emailAddress,
+                              decoration: const InputDecoration(
+                                labelText: "Email",
+                                prefixIcon: Icon(Icons.email_outlined),
+                              ),
+                            ),
+
+                            const SizedBox(height: 18),
+
+                            TextField(
+                              controller: _passwordController,
+                              obscureText: _obscurePassword,
+                              decoration: InputDecoration(
+                                labelText: "Password",
+                                prefixIcon: const Icon(
+                                  Icons.lock_outline_rounded,
                                 ),
-                                onPressed: () {
-                                  setState(() {
-                                    _obscurePassword = !_obscurePassword;
-                                  });
-                                },
-                              ),
-                            ),
-                          ),
-
-                          const SizedBox(height: 12),
-
-                          // Forgot Password
-                          Align(
-                            alignment: Alignment.centerRight,
-                            child: TextButton(
-                              onPressed: () {},
-                              child: const Text(
-                                "Forgot Password?",
-                                style: TextStyle(color: Color(0xFF1BA7A6)),
-                              ),
-                            ),
-                          ),
-
-                          const SizedBox(height: 10),
-
-                          // Login Button
-                          SizedBox(
-                            width: double.infinity,
-                            child: ElevatedButton(
-                              onPressed: _login,
-                              child: const Padding(
-                                padding: EdgeInsets.symmetric(vertical: 14),
-                                child: Text(
-                                  "LOGIN",
-                                  style: TextStyle(
-                                    fontSize: 16,
-                                    fontWeight: FontWeight.bold,
+                                suffixIcon: IconButton(
+                                  icon: Icon(
+                                    _obscurePassword
+                                        ? Icons.visibility_off
+                                        : Icons.visibility,
                                   ),
+                                  onPressed: () {
+                                    setState(() {
+                                      _obscurePassword = !_obscurePassword;
+                                    });
+                                  },
                                 ),
                               ),
                             ),
-                          ),
 
-                          const SizedBox(height: 20),
+                            const SizedBox(height: 12),
 
-                          // Divider
-                          Row(
-                            children: [
-                              Expanded(
-                                child: Divider(color: Colors.grey.shade300),
-                              ),
-                              const Padding(
-                                padding: EdgeInsets.symmetric(horizontal: 10),
-                                child: Text("OR"),
-                              ),
-                              Expanded(
-                                child: Divider(color: Colors.grey.shade300),
-                              ),
-                            ],
-                          ),
-
-                          const SizedBox(height: 20),
-
-                          // Sign Up
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              const Text("Don't have an account?"),
-                              TextButton(
+                            Align(
+                              alignment: Alignment.centerRight,
+                              child: TextButton(
                                 onPressed: () {},
                                 child: const Text(
-                                  "Sign Up",
-                                  style: TextStyle(
-                                    color: Color(0xFF1BA7A6),
-                                    fontWeight: FontWeight.bold,
+                                  "Forgot Password?",
+                                  style: TextStyle(color: Color(0xFF1BA7A6)),
+                                ),
+                              ),
+                            ),
+
+                            const SizedBox(height: 10),
+
+                            SizedBox(
+                              width: double.infinity,
+                              child: ElevatedButton(
+                                onPressed: _login,
+                                child: const Padding(
+                                  padding: EdgeInsets.symmetric(vertical: 14),
+                                  child: Text(
+                                    "LOGIN",
+                                    style: TextStyle(
+                                      fontSize: 16,
+                                      fontWeight: FontWeight.bold,
+                                    ),
                                   ),
                                 ),
                               ),
-                            ],
-                          ),
-                        ],
+                            ),
+
+                            const SizedBox(height: 12),
+
+                            Row(
+                              children: [
+                                Expanded(
+                                  child: Divider(color: Colors.grey.shade300),
+                                ),
+                                const Padding(
+                                  padding: EdgeInsets.symmetric(horizontal: 10),
+                                  child: Text("OR"),
+                                ),
+                                Expanded(
+                                  child: Divider(color: Colors.grey.shade300),
+                                ),
+                              ],
+                            ),
+
+                            const SizedBox(height: 10),
+
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                const Text("Don't have an account?"),
+                                TextButton(
+                                  onPressed: () {},
+                                  child: const Text(
+                                    "Sign Up",
+                                    style: TextStyle(
+                                      color: Color(0xFF1BA7A6),
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
                       ),
                     ),
-                  ),
 
-                  const SizedBox(height: 30),
+                    const SizedBox(height: 10),
 
-                  Text(
-                    "Empowering learners through technology",
-                    textAlign: TextAlign.center,
-                    style: TextStyle(color: Colors.grey.shade600),
-                  ),
-                ],
+                    Text(
+                      "Empowering learners through Excelerate opportunities",
+                      textAlign: TextAlign.center,
+                      style: TextStyle(color: Colors.grey.shade600),
+                    ),
+                  ],
+                ),
               ),
             ),
           ),

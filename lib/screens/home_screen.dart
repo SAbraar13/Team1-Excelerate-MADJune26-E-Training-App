@@ -17,7 +17,20 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("E-Training App"),
+        backgroundColor: const Color(0xFF0D1B2A),
+        title: const Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(
+              "E-Training App",
+              style: TextStyle(fontWeight: FontWeight.bold),
+            ),
+            Text(
+              "Powered by Excelerate",
+              style: TextStyle(fontSize: 12, color: Colors.white70),
+            ),
+          ],
+        ),
         actions: [
           IconButton(
             onPressed: () {},
@@ -58,7 +71,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   CircleAvatar(
                     radius: 28,
                     backgroundColor: Colors.white,
-                    child: Icon(Icons.person, color: Color(0xFF1BA7A6)),
+                    child: Icon(Icons.school, color: Color(0xFF1BA7A6)),
                   ),
                   SizedBox(width: 16),
                   Expanded(
@@ -66,12 +79,12 @@ class _HomeScreenState extends State<HomeScreen> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          "Welcome Back",
+                          "Welcome to E-Training App",
                           style: TextStyle(color: Colors.white70),
                         ),
                         SizedBox(height: 5),
                         Text(
-                          "Future Developer 👋",
+                          "Explore Excelerate internships, training programs, and career development opportunities.",
                           style: TextStyle(
                             color: Colors.white,
                             fontSize: 20,
@@ -90,7 +103,7 @@ class _HomeScreenState extends State<HomeScreen> {
             // Search Bar
             TextField(
               decoration: InputDecoration(
-                hintText: "Search Programs...",
+                hintText: "Search Excelerate Programs...",
                 prefixIcon: const Icon(Icons.search),
                 filled: true,
                 fillColor: Colors.white,
@@ -103,9 +116,8 @@ class _HomeScreenState extends State<HomeScreen> {
 
             const SizedBox(height: 25),
 
-            // Categories
             const Text(
-              "Categories",
+              "Learning Categories",
               style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
             ),
 
@@ -120,23 +132,23 @@ class _HomeScreenState extends State<HomeScreen> {
               childAspectRatio: 1.2,
               children: [
                 CategoryCard(
-                  title: "Development",
-                  icon: Icons.code,
+                  title: "Mobile Dev",
+                  icon: Icons.phone_android,
                   onTap: () {},
                 ),
                 CategoryCard(
-                  title: "Design",
-                  icon: Icons.design_services,
-                  onTap: () {},
-                ),
-                CategoryCard(
-                  title: "Business",
-                  icon: Icons.business_center,
-                  onTap: () {},
-                ),
-                CategoryCard(
-                  title: "Data Science",
+                  title: "AI & Data",
                   icon: Icons.analytics,
+                  onTap: () {},
+                ),
+                CategoryCard(
+                  title: "Research",
+                  icon: Icons.psychology,
+                  onTap: () {},
+                ),
+                CategoryCard(
+                  title: "Career Prep",
+                  icon: Icons.work,
                   onTap: () {},
                 ),
               ],
@@ -144,16 +156,15 @@ class _HomeScreenState extends State<HomeScreen> {
 
             const SizedBox(height: 25),
 
-            // Popular Programs
             const Text(
-              "Popular Programs",
+              "Excelerate Opportunities",
               style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
             ),
 
             const SizedBox(height: 12),
 
             ProgramCard(
-              title: "Flutter Development",
+              title: "Flutter App Development Internship",
               duration: "12 Weeks",
               level: "Beginner",
               icon: Icons.phone_android,
@@ -163,20 +174,20 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
 
             ProgramCard(
-              title: "UI/UX Design",
+              title: "AI-Powered Data Analysis Internship",
               duration: "10 Weeks",
               level: "Intermediate",
-              icon: Icons.brush,
+              icon: Icons.analytics,
               onTap: () {
                 Navigator.pushNamed(context, '/programs');
               },
             ),
 
             ProgramCard(
-              title: "Data Science",
-              duration: "14 Weeks",
-              level: "Advanced",
-              icon: Icons.analytics,
+              title: "Prompt Engineering Research Program",
+              duration: "8 Weeks",
+              level: "Intermediate",
+              icon: Icons.psychology,
               onTap: () {
                 Navigator.pushNamed(context, '/programs');
               },
@@ -184,19 +195,22 @@ class _HomeScreenState extends State<HomeScreen> {
 
             const SizedBox(height: 20),
 
-            // Announcements
             const Text(
-              "Announcements",
+              "Excelerate Updates",
               style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
             ),
 
             const SizedBox(height: 12),
 
-            _announcementCard("Flutter Bootcamp Registration Open"),
+            _announcementCard(
+              "Applications Open for Flutter Internship Cohort",
+            ),
 
-            _announcementCard("New Programs Available"),
+            _announcementCard("New AI & Data Analysis Programs Added"),
 
-            _announcementCard("Workshop Starts Next Week"),
+            _announcementCard(
+              "Upcoming Excelerate Career Development Workshop",
+            ),
           ],
         ),
       ),

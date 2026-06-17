@@ -8,8 +8,9 @@ class ProgramDetailsScreen extends StatelessWidget {
     final args =
         ModalRoute.of(context)?.settings.arguments as Map<String, dynamic>?;
 
-    final title = args?['title'] ?? "Flutter Development";
+    final title = args?['title'] ?? "Flutter App Development Internship";
     final duration = args?['duration'] ?? "12 Weeks";
+
     final level = args?['level'] ?? "Beginner";
 
     return Scaffold(
@@ -22,7 +23,7 @@ class ProgramDetailsScreen extends StatelessWidget {
             // =========================
             Container(
               width: double.infinity,
-              padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 40),
+              padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 28),
               decoration: const BoxDecoration(
                 gradient: LinearGradient(
                   colors: [Color(0xFF0D1B2A), Color(0xFF1BA7A6)],
@@ -45,9 +46,13 @@ class ProgramDetailsScreen extends StatelessWidget {
                   ),
                   const SizedBox(height: 10),
                   const Text(
-                    "Upgrade your skills and accelerate your career.",
+                    "Learn • Grow • Succeed with Excelerate",
                     textAlign: TextAlign.center,
-                    style: TextStyle(color: Colors.white70, fontSize: 15),
+                    style: TextStyle(
+                      color: Colors.white70,
+                      fontSize: 15,
+                      fontWeight: FontWeight.w500,
+                    ),
                   ),
                 ],
               ),
@@ -61,10 +66,14 @@ class ProgramDetailsScreen extends StatelessWidget {
                   // PROGRAM INFORMATION
                   // =========================
                   Card(
+                    elevation: 5,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(16),
+                    ),
                     child: Padding(
                       padding: const EdgeInsets.all(18),
                       child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
                           const Text(
                             "Program Information",
@@ -97,6 +106,10 @@ class ProgramDetailsScreen extends StatelessWidget {
                   // DESCRIPTION
                   // =========================
                   Card(
+                    elevation: 5,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(16),
+                    ),
                     child: Padding(
                       padding: const EdgeInsets.all(18),
                       child: Column(
@@ -127,6 +140,10 @@ class ProgramDetailsScreen extends StatelessWidget {
                   // LEARNING OUTCOMES
                   // =========================
                   Card(
+                    elevation: 5,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(16),
+                    ),
                     child: Padding(
                       padding: const EdgeInsets.all(18),
                       child: Column(
@@ -169,6 +186,10 @@ class ProgramDetailsScreen extends StatelessWidget {
                   // TRAINER INFO
                   // =========================
                   Card(
+                    elevation: 5,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(16),
+                    ),
                     child: Padding(
                       padding: const EdgeInsets.all(18),
                       child: Row(
@@ -215,8 +236,15 @@ class ProgramDetailsScreen extends StatelessWidget {
                   // =========================
                   SizedBox(
                     width: double.infinity,
-                    height: 55,
+                    height: 60,
                     child: ElevatedButton.icon(
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: const Color(0xFF1BA7A6),
+                        foregroundColor: Colors.white,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(15),
+                        ),
+                      ),
                       icon: const Icon(Icons.app_registration),
                       label: const Text(
                         "Register Now",
