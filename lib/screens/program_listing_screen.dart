@@ -60,8 +60,15 @@ class _ProgramListingScreenState extends State<ProgramListingScreen> {
               .toList();
 
     return Scaffold(
-      appBar: AppBar(title: const Text("Programs"), centerTitle: true),
-
+      appBar: AppBar(
+        title: const Text("Programs"),
+        leading: IconButton(
+          icon: const Icon(Icons.arrow_back),
+          onPressed: () {
+            Navigator.pop(context);
+          },
+        ),
+      ),
       body: Column(
         children: [
           // Header Banner

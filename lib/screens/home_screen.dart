@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-
+import 'profile_screen.dart';
+import 'program_listing_screen.dart';
 import '../widgets/category_card.dart';
 import '../widgets/program_card.dart';
 
@@ -15,6 +16,10 @@ class _HomeScreenState extends State<HomeScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final userData =
+        ModalRoute.of(context)?.settings.arguments as Map<String, dynamic>?;
+
+    final userName = userData?['name'] ?? 'Learner';
     return Scaffold(
       appBar: AppBar(
         backgroundColor: const Color(0xFF0D1B2A),
@@ -46,6 +51,22 @@ class _HomeScreenState extends State<HomeScreen> {
           setState(() {
             currentIndex = index;
           });
+
+          if (index == 1) {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (_) => const ProgramListingScreen()),
+            );
+          }
+
+          if (index == 2) {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (_) => ProfileScreen(userData: userData ?? {}),
+              ),
+            );
+          }
         },
         items: const [
           BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
@@ -66,7 +87,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 color: const Color(0xFF0D1B2A),
                 borderRadius: BorderRadius.circular(20),
               ),
-              child: const Row(
+              child: Row(
                 children: [
                   CircleAvatar(
                     radius: 28,
@@ -79,18 +100,14 @@ class _HomeScreenState extends State<HomeScreen> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          "Welcome to E-Training App",
-                          style: TextStyle(color: Colors.white70),
-                        ),
-                        SizedBox(height: 5),
-                        Text(
-                          "Explore Excelerate internships, training programs, and career development opportunities.",
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 20,
+                          "Welcome, $userName 👋",
+                          style: const TextStyle(
+                            fontSize: 22,
                             fontWeight: FontWeight.bold,
+                            color: Colors.white,
                           ),
                         ),
+                        SizedBox(height: 5),
                       ],
                     ),
                   ),
