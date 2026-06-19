@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:firebase_core/firebase_core.dart';
 
+import 'screens/registration_screen.dart';
 import 'screens/login_screen.dart';
 import 'screens/home_screen.dart';
 import 'screens/program_listing_screen.dart';
@@ -67,6 +68,7 @@ class ETrainingApp extends StatelessWidget {
         '/home': (context) => const HomeScreen(),
         '/programs': (context) => const ProgramListingScreen(),
         '/details': (context) => const ProgramDetailsScreen(),
+        '/register': (context) => const RegistrationScreen(),
       },
     );
   }
