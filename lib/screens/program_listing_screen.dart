@@ -1,3 +1,5 @@
+import 'dart:convert';
+import 'package:flutter/services.dart';
 import 'package:flutter/material.dart';
 
 class ProgramListingScreen extends StatefulWidget {
@@ -10,49 +12,55 @@ class ProgramListingScreen extends StatefulWidget {
 class _ProgramListingScreenState extends State<ProgramListingScreen> {
   String selectedFilter = "All";
 
-  final List<Map<String, dynamic>> programs = [
-    {
-      "title": "Flutter App Development Internship",
-      "duration": "12 Weeks",
-      "level": "Beginner",
-      "description": "Learn Flutter and build modern mobile applications.",
-      "icon": Icons.phone_android,
-    },
-    {
-      "title": "AI-Powered Data Analysis Internship",
-      "duration": "10 Weeks",
-      "level": "Intermediate",
-      "description": "Learn data analysis, visualization, and AI tools.",
-      "icon": Icons.analytics,
-    },
-    {
-      "title": "Prompt Engineering Research Program",
-      "duration": "8 Weeks",
-      "level": "Intermediate",
-      "description":
-          "Research and develop advanced prompt engineering techniques.",
-      "icon": Icons.psychology,
-    },
-    {
-      "title": "Data Visualization Training Program",
-      "duration": "8 Weeks",
-      "level": "Beginner",
-      "description":
-          "Learn data storytelling, dashboards, charts, and visualization tools.",
-      "icon": Icons.bar_chart,
-    },
-    {
-      "title": "Full Stack Web Development Internship",
-      "duration": "16 Weeks",
-      "level": "Advanced",
-      "description":
-          "Build responsive web applications using frontend and backend technologies.",
-      "icon": Icons.web,
-    },
-  ];
+  List<dynamic> programs = [];
+  bool isLoading = true;
+  @override
+  void initState() {
+    super.initState();
+    loadPrograms();
+  }
+
+  Future<void> loadPrograms() async {
+    await Future.delayed(const Duration(seconds: 1));
+    final String response = await rootBundle.loadString(
+      'assets/data/programs.json',
+    );
+
+    final data = json.decode(response);
+
+    setState(() {
+      programs = data;
+      isLoading = false;
+    });
+  }
+
+  IconData getProgramIcon(String iconName) {
+    switch (iconName) {
+      case "phone_android":
+        return Icons.phone_android;
+
+      case "analytics":
+        return Icons.analytics;
+
+      case "psychology":
+        return Icons.psychology;
+
+      case "bar_chart":
+        return Icons.bar_chart;
+
+      case "web":
+        return Icons.web;
+
+      default:
+        return Icons.school;
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
+    if (isLoading) {
+      return const Scaffold(body: Center(child: CircularProgressIndicator()));
+    }
     final filteredPrograms = selectedFilter == "All"
         ? programs
         : programs
@@ -150,8 +158,9 @@ class _ProgramListingScreenState extends State<ProgramListingScreen> {
                           title: program["title"],
                           duration: program["duration"],
                           level: program["level"],
-                          description: program["description"],
-                          icon: program["icon"],
+                          shortDescription: program["shortDescription"],
+                          fullDescription: program["description"],
+                          icon: getProgramIcon(program["icon"]),
                         );
                       },
                     ),
@@ -189,7 +198,8 @@ class _ProgramListingScreenState extends State<ProgramListingScreen> {
     required String title,
     required String duration,
     required String level,
-    required String description,
+    required String shortDescription,
+    required String fullDescription,
     required IconData icon,
   }) {
     return Card(
@@ -233,7 +243,10 @@ class _ProgramListingScreenState extends State<ProgramListingScreen> {
 
             const SizedBox(height: 15),
 
-            Text(description, style: TextStyle(color: Colors.grey.shade700)),
+            Text(
+              shortDescription,
+              style: TextStyle(color: Colors.grey.shade700),
+            ),
 
             const SizedBox(height: 18),
 
@@ -248,6 +261,7 @@ class _ProgramListingScreenState extends State<ProgramListingScreen> {
                       "title": title,
                       "duration": duration,
                       "level": level,
+                      "description": fullDescription,
                     },
                   );
                 },

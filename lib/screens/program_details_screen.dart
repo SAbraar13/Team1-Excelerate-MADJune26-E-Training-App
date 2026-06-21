@@ -10,17 +10,14 @@ class ProgramDetailsScreen extends StatelessWidget {
 
     final title = args?['title'] ?? "Flutter App Development Internship";
     final duration = args?['duration'] ?? "12 Weeks";
-
     final level = args?['level'] ?? "Beginner";
+    final description = args?['description'] ?? '';
 
     return Scaffold(
       appBar: AppBar(title: const Text("Program Details"), centerTitle: true),
       body: SingleChildScrollView(
         child: Column(
           children: [
-            // =========================
-            // HERO BANNER
-            // =========================
             Container(
               width: double.infinity,
               padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 28),
@@ -62,9 +59,6 @@ class ProgramDetailsScreen extends StatelessWidget {
               padding: const EdgeInsets.all(16),
               child: Column(
                 children: [
-                  // =========================
-                  // PROGRAM INFORMATION
-                  // =========================
                   Card(
                     elevation: 5,
                     shape: RoundedRectangleBorder(
@@ -102,9 +96,6 @@ class ProgramDetailsScreen extends StatelessWidget {
 
                   const SizedBox(height: 16),
 
-                  // =========================
-                  // DESCRIPTION
-                  // =========================
                   Card(
                     elevation: 5,
                     shape: RoundedRectangleBorder(
@@ -114,8 +105,8 @@ class ProgramDetailsScreen extends StatelessWidget {
                       padding: const EdgeInsets.all(18),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
-                        children: const [
-                          Text(
+                        children: [
+                          const Text(
                             "Description",
                             style: TextStyle(
                               fontSize: 20,
@@ -123,11 +114,11 @@ class ProgramDetailsScreen extends StatelessWidget {
                             ),
                           ),
 
-                          SizedBox(height: 10),
+                          const SizedBox(height: 10),
 
                           Text(
-                            "This program is designed to provide students with practical industry-oriented knowledge through hands-on learning, projects, assignments, and expert guidance. Participants will gain real-world experience and build a strong professional portfolio.",
-                            style: TextStyle(height: 1.6),
+                            description,
+                            style: const TextStyle(height: 1.6),
                           ),
                         ],
                       ),
@@ -136,9 +127,6 @@ class ProgramDetailsScreen extends StatelessWidget {
 
                   const SizedBox(height: 16),
 
-                  // =========================
-                  // LEARNING OUTCOMES
-                  // =========================
                   Card(
                     elevation: 5,
                     shape: RoundedRectangleBorder(

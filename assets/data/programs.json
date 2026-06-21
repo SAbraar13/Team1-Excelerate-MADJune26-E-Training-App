@@ -3,35 +3,40 @@
     "title": "Flutter App Development Internship",
     "duration": "12 Weeks",
     "level": "Beginner",
-    "description": "Learn Flutter and build modern mobile applications.",
+    "shortDescription": "Learn Flutter and build modern mobile apps...",
+    "description":"Learn Flutter and Dart to build modern cross-platform mobile applications. Gain hands-on experience in UI design, state management, Firebase integration, API consumption, and app deployment while working on real-world projects and industry-based assignments.",
     "icon": "phone_android"
   },
   {
     "title": "AI-Powered Data Analysis Internship",
     "duration": "10 Weeks",
     "level": "Intermediate",
-    "description": "Learn data analysis, visualization and AI tools.",
+    "shortDescription": "Analyze data and create AI-powered insights...",
+    "description":"Develop practical skills in data analysis, data visualization, and artificial intelligence tools. Learn how to clean, analyze, and interpret datasets using modern techniques while creating dashboards, reports, and insights that support data-driven decision making.",
     "icon": "analytics"
   },
   {
     "title": "Prompt Engineering Research Program",
     "duration": "8 Weeks",
     "level": "Intermediate",
-    "description": "Research and develop advanced prompt engineering techniques.",
+    "shortDescription": "Explore AI prompts and research techniques...",
+    "description": "Explore the rapidly growing field of Generative AI and Prompt Engineering. Learn how to design effective prompts, evaluate AI responses, conduct research experiments, and develop AI-assisted solutions using large language models and emerging AI technologies.",
     "icon": "psychology"
   },
   {
     "title": "Data Visualization Training Program",
     "duration": "8 Weeks",
     "level": "Beginner",
-    "description": "Learn dashboards, charts and data storytelling.",
+    "shortDescription": "Create dashboards and visual stories from data...",
+    "description":"Master the art of transforming complex datasets into meaningful visual stories. Learn chart design, dashboard creation, data storytelling, and visualization best practices using industry-standard tools to communicate insights effectively.",
     "icon": "bar_chart"
   },
   {
     "title": "Full Stack Web Development Internship",
     "duration": "16 Weeks",
     "level": "Advanced",
-    "description": "Build responsive web applications using frontend and backend technologies.",
+    "shortDescription": "Build responsive frontend and backend applications...",
+    "description": "Build complete web applications using modern frontend and backend technologies. Learn responsive web design, database integration, REST APIs, authentication, deployment strategies, and software development best practices through project-based learning.",
     "icon": "web"
   }
 ]

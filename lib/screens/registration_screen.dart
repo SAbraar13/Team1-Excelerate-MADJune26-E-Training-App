@@ -39,6 +39,8 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
           .where('email', isEqualTo: _emailController.text.trim())
           .get();
 
+      if (!mounted) return;
+
       if (existingUser.docs.isNotEmpty) {
         ScaffoldMessenger.of(context).showSnackBar(
           const SnackBar(

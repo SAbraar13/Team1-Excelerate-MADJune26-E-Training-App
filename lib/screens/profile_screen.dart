@@ -58,6 +58,19 @@ class ProfileScreen extends StatelessWidget {
             SizedBox(
               width: double.infinity,
               child: ElevatedButton.icon(
+                icon: const Icon(Icons.feedback),
+                label: const Text("Give Feedback"),
+                onPressed: () {
+                  Navigator.pushNamed(context, '/feedback');
+                },
+              ),
+            ),
+
+            const SizedBox(height: 15),
+
+            SizedBox(
+              width: double.infinity,
+              child: ElevatedButton.icon(
                 icon: const Icon(Icons.logout),
                 label: const Text("Logout"),
                 onPressed: () {
