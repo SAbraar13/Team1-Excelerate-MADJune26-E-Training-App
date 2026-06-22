@@ -1,165 +1,188 @@
-# E-Training App
+# 🚀 E-Training App
 
-## Project Overview
-
-The E-Training App is a Flutter-based mobile application developed as part of the Excelerate Mobile App Development Internship Program. The application aims to provide learners with a centralized platform to explore training programs, view announcements, access learning opportunities, and manage their profiles.
-
-The project focuses on creating a simple, user-friendly, and visually appealing learning platform that improves accessibility and engagement for learners.
+> A Flutter-based learning and internship management platform developed as part of the Excelerate Mobile Application Development Internship.
 
 ---
 
-## Project Objectives
+## 📱 Project Overview
 
-* Provide a centralized platform for training-related activities.
-* Allow learners to explore available programs easily.
-* Improve communication through announcements and updates.
-* Create a structured and user-friendly mobile experience.
-* Build a scalable foundation for future learning features.
+The E-Training App is designed to provide learners with a centralized platform to explore training programs, internships, announcements, and learning opportunities.
+
+The application integrates Flutter, Firebase Firestore, JSON-based data management, and form validation to create a dynamic and interactive learning experience.
 
 ---
 
-## Target Users
+## ✨ Features
 
-### Learners
+### 🔐 Authentication System
 
-* Browse available programs
-* View program details
-* Access announcements
-* Manage profile information
+* User Registration
+* User Login
+* Duplicate Email Validation
+* Logout Functionality
+* Firebase Firestore Integration
 
-### Administrators
+### 📚 Program Management
 
-* Manage programs
-* Publish announcements
-* Monitor learner engagement
+* Dynamic Program Listing
+* JSON-Based Data Integration
+* Program Filtering
+* Program Details Screen
+* Dynamic Content Loading
 
----
+### 💬 Feedback System
 
-## Features Implemented (Week 2)
+* Feedback Submission Form
+* Form Validation
+* Firebase Storage
+* Success/Error Notifications
 
-### Login Screen
+### 👤 User Profile
 
-* Email Input Field
-* Password Input Field
-* Login Button
+* Profile Information Display
+* Program Status
+* Navigation to Feedback Screen
+* Logout Confirmation Dialog
 
-### Home Screen
+### ⚡ User Experience
 
-* Welcome Section
-* Programs Section
-* Announcements Section
-* Quick Links
-* Profile Access
-
-### Program Listing Screen
-
-* Program Cards
-* Program Information
-* View Details Navigation
-
-### Program Details Screen
-
-* Detailed Program Information
-* Schedule Details
-* Eligibility Information
-* Registration Button
+* Loading Indicators
+* Responsive UI
+* Modern Material Design
+* Smooth Navigation
 
 ---
 
-## Navigation Flow
+## 🛠️ Technologies Used
+
+| Technology         | Purpose                |
+| ------------------ | ---------------------- |
+| Flutter            | Mobile App Development |
+| Dart               | Programming Language   |
+| Firebase Firestore | Database               |
+| JSON               | Dynamic Program Data   |
+| Git & GitHub       | Version Control        |
+| Material Design 3  | UI Framework           |
+
+---
+
+## 📂 Project Structure
 
 ```text
-Login Screen
-      ↓
-Home Screen
-      ↓
-Program Listing Screen
-      ↓
-Program Details Screen
+lib/
+├── screens/
+│   ├── login_screen.dart
+│   ├── registration_screen.dart
+│   ├── home_screen.dart
+│   ├── profile_screen.dart
+│   ├── program_listing_screen.dart
+│   ├── program_details_screen.dart
+│   └── feedback_screen.dart
+
+assets/
+└── data/
+    └── programs.json
 ```
 
 ---
 
-## Branding
+## 📌 Week 3 Enhancements
 
-The application follows a consistent branding strategy using:
+### JSON Integration
 
-* Unified Color Palette
-* Consistent Typography
-* Consistent Icons
-* Reusable UI Components
-* Responsive Layout Design
+* Program Listing loads data from `programs.json`
+* Program Details display dynamic content
+
+### Form Validation
+
+* Registration Validation
+* Email Validation
+* Password Validation
+* Feedback Validation
+
+### Firebase Integration
+
+* User Data Storage
+* Feedback Storage
+* Firestore Collections
+
+### Loading Indicators
+
+* Login Loading
+* Registration Loading
+* Program Loading
+* Feedback Submission Loading
 
 ---
 
-## Technology Stack
+## 🔥 Firebase Collections
 
-* Flutter
-* Dart
-* GitHub
-* Visual Studio Code
-* Android Emulator
+### Users Collection
 
----
-
-## Project Structure
-
-```text
-E-Training-App
-│
-├── Wireframes
-├── lib
-│   ├── screens
-│   │       ├── home_screen
-│   │       ├── login_screen
-│   │       ├── program_listing_screen
-│   │       ├── program_details_screen
-│   │
-│   │── widgets
-│   │       ├── category_card
-│   │       ├── program_card
-│   │
-│   └── main.dart
-│
-├── android
-├── web
-├── test
-├── pubspec.yaml
-└── README.md
+```json
+{
+  "name": "User Name",
+  "email": "user@email.com",
+  "password": "******"
+}
 ```
 
+### Feedback Collection
 
-## Week 1 Deliverables
-
-* App Proposal Document
-* Wireframe Designs
-* Navigation Flow
-* GitHub Repository Setup
-
----
-
-## Week 2 Deliverables
-
-* Functional Login Screen
-* Functional Home Screen
-* Functional Program Listing Screen
-* Functional Program Details Screen
-* Navigation Implementation
-* Branding Integration
-
+```json
+{
+  "name": "User Name",
+  "email": "user@email.com",
+  "feedback": "Great App!",
+  "createdAt": "Timestamp"
+}
+```
 
 ---
 
-## Future Scope
+## 📈 Improvements Based on Evaluation Feedback
 
-* User Authentication
-* Firebase Integration
-* Notifications
-* Program Registration System
-* Progress Tracking
-* Learning Analytics Dashboard
+✅ Repository naming corrected
 
+✅ Application aligned with Excelerate programs and internships
 
-## Conclusion
+✅ Documentation improved
 
-The E-Training App has successfully progressed from wireframe planning to a functional Flutter UI prototype. The application currently includes four interactive screens, navigation between screens, and consistent branding. This provides a strong foundation for implementing additional functionality in future development phases.
+✅ Increased team participation in demonstrations
+
+✅ Enhanced project presentation and testing
+
+---
+
+## 👥 Team Contributions
+
+| Member   | Responsibility                       |
+| -------- | ------------------------------------ |
+| Member 1 | Authentication & User Management     |
+| Member 2 | Program Listing & JSON Integration   |
+| Member 3 | Feedback System                      |
+| Member 4 | Program Details & Loading Indicators |
+| Member 5 | Documentation & Screenshots          |
+| Member 6 | Testing & Quality Assurance          |
+
+---
+
+## 🎯 Learning Outcomes
+
+Through this project, the team gained experience in:
+
+* Flutter Application Development
+* Firebase Firestore Integration
+* JSON Data Handling
+* Form Validation
+* Loading States & Error Handling
+* GitHub Collaboration
+* Team-Based Software Development
+
+---
+
+## 🏆 Conclusion
+
+The E-Training App successfully demonstrates a complete Flutter application featuring authentication, dynamic content management, Firebase integration, user feedback collection, and responsive user experience design.
+
+The project reflects collaborative teamwork, continuous improvement, and practical implementation of modern mobile application development concepts.
