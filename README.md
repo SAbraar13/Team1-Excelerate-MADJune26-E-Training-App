@@ -154,18 +154,6 @@ assets/
 
 ---
 
-## 👥 Team Contributions
-
-| Member   | Responsibility                       |
-| -------- | ------------------------------------ |
-| Member 1 | Authentication & User Management     |
-| Member 2 | Program Listing & JSON Integration   |
-| Member 3 | Feedback System                      |
-| Member 4 | Program Details & Loading Indicators |
-| Member 5 | Documentation & Screenshots          |
-| Member 6 | Testing & Quality Assurance          |
-
----
 
 ## 🎯 Learning Outcomes
 
