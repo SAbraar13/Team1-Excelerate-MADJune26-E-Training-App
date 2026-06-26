@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import '../widgets/custom_dialog.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -25,12 +26,12 @@ class _LoginScreenState extends State<LoginScreen> {
   Future<void> _login() async {
     if (_emailController.text.trim().isEmpty ||
         _passwordController.text.trim().isEmpty) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text('Please enter email and password'),
-          backgroundColor: Colors.red,
-        ),
+      CustomDialog.showError(
+        context,
+        "Missing Information",
+        "Please enter both your email and password before logging in.",
       );
+
       return;
     }
 
@@ -48,11 +49,10 @@ class _LoginScreenState extends State<LoginScreen> {
       if (userSnapshot.docs.isNotEmpty) {
         if (!mounted) return;
 
-        ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(
-            content: Text('Login Successful 🎉'),
-            backgroundColor: Colors.green,
-          ),
+        CustomDialog.showSuccess(
+          context,
+          "Welcome",
+          "Login successful!\nWelcome back to the Excelerate E-Training App.",
         );
 
         final userData = userSnapshot.docs.first.data();
@@ -67,11 +67,10 @@ class _LoginScreenState extends State<LoginScreen> {
           _isLoading = false;
         });
 
-        ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(
-            content: Text('Invalid Email or Password'),
-            backgroundColor: Colors.red,
-          ),
+        CustomDialog.showError(
+          context,
+          "Login Failed",
+          "Invalid email or password.\nPlease check your credentials and try again.",
         );
       }
     } catch (e) {
@@ -79,11 +78,10 @@ class _LoginScreenState extends State<LoginScreen> {
         _isLoading = false;
       });
 
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
-          content: Text('Login Failed: $e'),
-          backgroundColor: Colors.red,
-        ),
+      CustomDialog.showError(
+        context,
+        "Login Failed",
+        "Invalid email or password.\nPlease check your credentials and try again.",
       );
     }
   }
@@ -243,8 +241,13 @@ class _LoginScreenState extends State<LoginScreen> {
                                     vertical: 14,
                                   ),
                                   child: _isLoading
-                                      ? const CircularProgressIndicator(
-                                          color: Colors.white,
+                                      ? const SizedBox(
+                                          height: 24,
+                                          width: 24,
+                                          child: CircularProgressIndicator(
+                                            color: Colors.white,
+                                            strokeWidth: 3,
+                                          ),
                                         )
                                       : const Text(
                                           "LOGIN",

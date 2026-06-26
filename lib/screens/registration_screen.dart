@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import '../widgets/custom_dialog.dart';
 
 class RegistrationScreen extends StatefulWidget {
   const RegistrationScreen({super.key});
@@ -42,11 +43,10 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
       if (!mounted) return;
 
       if (existingUser.docs.isNotEmpty) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(
-            content: Text('Email already registered'),
-            backgroundColor: Colors.orange,
-          ),
+        CustomDialog.showError(
+          context,
+          "Duplicate Email",
+          "An account with this email already exists.\nPlease use another email address.",
         );
 
         setState(() {
@@ -73,11 +73,10 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
 
       Navigator.pop(context);
     } catch (e) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
-          content: Text('Registration Failed: $e'),
-          backgroundColor: Colors.red,
-        ),
+      CustomDialog.showSuccess(
+        context,
+        "Success",
+        "🎉 Your account has been created successfully.\n\nYou can now log in and start exploring Excelerate programs.",
       );
     }
 
@@ -156,8 +155,8 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                                   prefixIcon: Icon(Icons.person_outline),
                                 ),
                                 validator: (value) {
-                                  if (value == null || value.isEmpty) {
-                                    return "Please enter your name";
+                                  if (value == null || value.trim().isEmpty) {
+                                    return "Please enter your full name.";
                                   }
                                   return null;
                                 },
@@ -172,12 +171,14 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                                   prefixIcon: Icon(Icons.email_outlined),
                                 ),
                                 validator: (value) {
-                                  if (value == null || value.isEmpty) {
-                                    return "Please enter email";
+                                  if (value == null || value.trim().isEmpty) {
+                                    return "Please enter your email address.";
                                   }
-                                  if (!value.contains('@')) {
-                                    return "Enter valid email";
+
+                                  if (!value.contains("@")) {
+                                    return "Please enter a valid email address.";
                                   }
+
                                   return null;
                                 },
                               ),
@@ -204,9 +205,14 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                                   ),
                                 ),
                                 validator: (value) {
-                                  if (value == null || value.length < 6) {
-                                    return "Password must be at least 6 characters";
+                                  if (value == null || value.isEmpty) {
+                                    return "Please enter a password.";
                                   }
+
+                                  if (value.length < 6) {
+                                    return "Password must contain at least 6 characters.";
+                                  }
+
                                   return null;
                                 },
                               ),
@@ -222,8 +228,13 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                                       vertical: 14,
                                     ),
                                     child: _isLoading
-                                        ? const CircularProgressIndicator(
-                                            color: Colors.white,
+                                        ? const SizedBox(
+                                            height: 24,
+                                            width: 24,
+                                            child: CircularProgressIndicator(
+                                              color: Colors.white,
+                                              strokeWidth: 3,
+                                            ),
                                           )
                                         : const Text(
                                             "REGISTER",

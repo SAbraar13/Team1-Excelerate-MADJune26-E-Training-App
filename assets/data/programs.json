@@ -1,42 +1,47 @@
 [
   {
     "title": "Flutter App Development Internship",
+    "category": "Mobile Dev",
     "duration": "12 Weeks",
     "level": "Beginner",
-    "shortDescription": "Learn Flutter and build modern mobile apps...",
-    "description":"Learn Flutter and Dart to build modern cross-platform mobile applications. Gain hands-on experience in UI design, state management, Firebase integration, API consumption, and app deployment while working on real-world projects and industry-based assignments.",
+    "shortDescription": "Build modern cross-platform mobile applications using Flutter and Dart while learning industry-standard development practices.",
+    "description": "The Flutter App Development Internship provides hands-on experience in building cross-platform mobile applications using Flutter and Dart. Participants will learn UI development, widget design, navigation, state management, Firebase integration, JSON handling, and best coding practices through practical projects. By the end of the program, learners will have developed real-world applications and gained valuable experience in mobile app development.",
     "icon": "phone_android"
   },
   {
     "title": "AI-Powered Data Analysis Internship",
+    "category": "AI & Data",
     "duration": "10 Weeks",
     "level": "Intermediate",
-    "shortDescription": "Analyze data and create AI-powered insights...",
-    "description":"Develop practical skills in data analysis, data visualization, and artificial intelligence tools. Learn how to clean, analyze, and interpret datasets using modern techniques while creating dashboards, reports, and insights that support data-driven decision making.",
+    "shortDescription": "Learn to analyze, visualize, and interpret data using modern AI-powered tools and data analytics techniques.",
+    "description": "This internship introduces learners to AI-powered data analysis using modern tools and techniques. Participants will explore data cleaning, visualization, statistical analysis, and AI-assisted insights while working with practical datasets. The program helps learners develop analytical thinking and data-driven decision-making skills applicable in real-world business scenarios.",
     "icon": "analytics"
   },
   {
     "title": "Prompt Engineering Research Program",
+    "category": "Research",
     "duration": "8 Weeks",
     "level": "Intermediate",
-    "shortDescription": "Explore AI prompts and research techniques...",
-    "description": "Explore the rapidly growing field of Generative AI and Prompt Engineering. Learn how to design effective prompts, evaluate AI responses, conduct research experiments, and develop AI-assisted solutions using large language models and emerging AI technologies.",
+    "shortDescription": "Explore prompt engineering techniques and research methodologies for building effective AI-powered applications.",
+    "description": "The Prompt Engineering Research Program focuses on understanding how large language models work and how effective prompts can improve AI-generated results. Participants learn prompt design strategies, AI research methods, evaluation techniques, and practical applications using modern generative AI tools. The program encourages experimentation and innovation in artificial intelligence.",
     "icon": "psychology"
   },
   {
     "title": "Data Visualization Training Program",
+    "category": "AI & Data",
     "duration": "8 Weeks",
     "level": "Beginner",
-    "shortDescription": "Create dashboards and visual stories from data...",
-    "description":"Master the art of transforming complex datasets into meaningful visual stories. Learn chart design, dashboard creation, data storytelling, and visualization best practices using industry-standard tools to communicate insights effectively.",
+    "shortDescription": "Transform complex datasets into meaningful visual insights using modern data visualization tools and techniques.",
+    "description": "This training program teaches learners how to present data effectively using charts, dashboards, and interactive visualizations. Participants explore visualization principles, storytelling with data, dashboard design, and business reporting techniques. The program helps improve decision-making through clear and impactful data presentation.",
     "icon": "bar_chart"
   },
   {
     "title": "Full Stack Web Development Internship",
+    "category": "Career Prep",
     "duration": "16 Weeks",
     "level": "Advanced",
-    "shortDescription": "Build responsive frontend and backend applications...",
-    "description": "Build complete web applications using modern frontend and backend technologies. Learn responsive web design, database integration, REST APIs, authentication, deployment strategies, and software development best practices through project-based learning.",
+    "shortDescription": "Develop complete web applications using modern frontend and backend technologies while following industry best practices.",
+    "description": "The Full Stack Web Development Internship provides practical experience in developing responsive web applications using modern frontend and backend technologies. Learners gain knowledge of user interface design, databases, APIs, authentication, version control, and deployment. By completing real-world projects, participants build the skills required for professional full-stack development.",
     "icon": "web"
   }
 ]

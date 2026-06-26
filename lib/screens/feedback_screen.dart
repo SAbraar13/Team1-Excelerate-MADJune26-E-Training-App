@@ -1,5 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
+import '../widgets/custom_dialog.dart';
 
 class FeedbackScreen extends StatefulWidget {
   const FeedbackScreen({super.key});
@@ -58,22 +59,20 @@ class _FeedbackScreenState extends State<FeedbackScreen> {
 
       if (!mounted) return;
 
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text('Feedback Submitted Successfully 🎉'),
-          backgroundColor: Colors.green,
-        ),
+      CustomDialog.showSuccess(
+        context,
+        "Thank You!",
+        "🎉 Your feedback has been submitted successfully.\n\nWe appreciate your valuable feedback.",
       );
 
       Navigator.pop(context);
     } catch (e) {
       if (!mounted) return;
 
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text('Failed to submit feedback'),
-          backgroundColor: Colors.red,
-        ),
+      CustomDialog.showError(
+        context,
+        "Submission Failed",
+        "Something went wrong while submitting your feedback.\nPlease try again.",
       );
     }
 
@@ -225,8 +224,13 @@ class _FeedbackScreenState extends State<FeedbackScreen> {
                               ),
                             ),
                             child: _isLoading
-                                ? const CircularProgressIndicator(
-                                    color: Colors.white,
+                                ? const SizedBox(
+                                    height: 24,
+                                    width: 24,
+                                    child: CircularProgressIndicator(
+                                      color: Colors.white,
+                                      strokeWidth: 3,
+                                    ),
                                   )
                                 : const Text(
                                     'Submit Feedback',
