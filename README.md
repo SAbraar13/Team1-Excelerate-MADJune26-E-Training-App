@@ -571,7 +571,7 @@ Expected Output:
 Clone the project repository:
 
 ```bash
-git clone https://github.com/<your-username>/Team1-Excelerate-MADJune26-E-Training-App.git
+https://github.com/SAbraar13/Team1-Excelerate-MADJune26-E-Training-App/edit/main/README.md
 ```
 
 Navigate into the project folder:
