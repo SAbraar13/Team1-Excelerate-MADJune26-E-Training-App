@@ -1,8 +1,12 @@
 import 'package:flutter/material.dart';
 
 class CustomDialog {
-  static void showSuccess(BuildContext context, String title, String message) {
-    showDialog(
+  static Future<void> showSuccess(
+    BuildContext context,
+    String title,
+    String message,
+  ) {
+    return showDialog(
       context: context,
       builder: (_) => AlertDialog(
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
@@ -24,8 +28,12 @@ class CustomDialog {
     );
   }
 
-  static void showError(BuildContext context, String title, String message) {
-    showDialog(
+  static Future<void> showError(
+    BuildContext context,
+    String title,
+    String message,
+  ) {
+    return showDialog(
       context: context,
       builder: (_) => AlertDialog(
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),

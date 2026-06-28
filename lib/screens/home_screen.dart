@@ -274,7 +274,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 physics: const NeverScrollableScrollPhysics(),
                 crossAxisSpacing: 12,
                 mainAxisSpacing: 12,
-                childAspectRatio: 0.85,
+                childAspectRatio: 0.72,
                 children: [
                   CategoryCard(
                     title: "Mobile Dev",

@@ -90,7 +90,7 @@ class ProfileScreen extends StatelessWidget {
                           onPressed: () {
                             Navigator.pushNamedAndRemoveUntil(
                               context,
-                              '/',
+                              '/login',
                               (route) => false,
                             );
                           },

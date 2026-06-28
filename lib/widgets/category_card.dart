@@ -42,6 +42,7 @@ class CategoryCard extends StatelessWidget {
 
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
+            mainAxisSize: MainAxisSize.min,
             children: [
               CircleAvatar(
                 radius: 26,
@@ -49,15 +50,19 @@ class CategoryCard extends StatelessWidget {
                 child: Icon(icon, color: const Color(0xFF1BA7A6), size: 28),
               ),
 
-              const SizedBox(height: 15),
+              const SizedBox(height: 10),
 
-              Text(
-                title,
-                textAlign: TextAlign.center,
-                style: const TextStyle(
-                  color: Colors.white,
-                  fontSize: 17,
-                  fontWeight: FontWeight.bold,
+              Flexible(
+                child: Text(
+                  title,
+                  textAlign: TextAlign.center,
+                  maxLines: 2,
+                  overflow: TextOverflow.ellipsis,
+                  style: const TextStyle(
+                    color: Colors.white,
+                    fontSize: 17,
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
               ),
 
@@ -68,24 +73,28 @@ class CategoryCard extends StatelessWidget {
                 style: const TextStyle(color: Colors.white70, fontSize: 13),
               ),
 
-              const SizedBox(height: 12),
+              const SizedBox(height: 8),
 
-              const Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Text(
-                    "Tap to Explore",
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 12,
-                      fontWeight: FontWeight.w600,
+              const FittedBox(
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text(
+                      "Tap to Explore",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 12,
+                        fontWeight: FontWeight.w600,
+                      ),
                     ),
-                  ),
-
-                  SizedBox(width: 5),
-
-                  Icon(Icons.arrow_forward_ios, size: 12, color: Colors.white),
-                ],
+                    SizedBox(width: 5),
+                    Icon(
+                      Icons.arrow_forward_ios,
+                      size: 12,
+                      color: Colors.white,
+                    ),
+                  ],
+                ),
               ),
             ],
           ),

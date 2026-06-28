@@ -9,6 +9,7 @@ import 'screens/home_screen.dart';
 import 'screens/program_listing_screen.dart';
 import 'screens/program_details_screen.dart';
 import 'screens/feedback_screen.dart';
+import 'screens/splash_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -66,12 +67,13 @@ class ETrainingApp extends StatelessWidget {
       initialRoute: '/',
 
       routes: {
-        '/': (context) => const LoginScreen(),
+        '/': (context) => const SplashScreen(),
         '/home': (context) => const HomeScreen(),
         '/programs': (context) => const ProgramListingScreen(),
         '/details': (context) => const ProgramDetailsScreen(),
         '/register': (context) => const RegistrationScreen(),
         '/feedback': (context) => const FeedbackScreen(),
+        '/login': (context) => const LoginScreen(),
       },
     );
   }

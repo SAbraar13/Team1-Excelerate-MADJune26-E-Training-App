@@ -59,11 +59,13 @@ class _FeedbackScreenState extends State<FeedbackScreen> {
 
       if (!mounted) return;
 
-      CustomDialog.showSuccess(
+      await CustomDialog.showSuccess(
         context,
         "Thank You!",
         "🎉 Your feedback has been submitted successfully.\n\nWe appreciate your valuable feedback.",
       );
+
+      if (!mounted) return;
 
       Navigator.pop(context);
     } catch (e) {

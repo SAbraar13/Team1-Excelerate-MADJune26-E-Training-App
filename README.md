@@ -1,310 +1,412 @@
 # 🚀 E-Training App
 
-> **A Flutter-based Learning & Internship Management Platform developed as part of the Excelerate Mobile Application Development Internship.**
+<div align="center">
 
-<p align="center">
-A modern mobile application that empowers learners to discover internship opportunities, training programs, career resources, and educational content through an intuitive and interactive user experience powered by Flutter and Firebase.
-</p>
+### 📱 A Modern Flutter-Based Learning & Internship Management Platform
+
+**Developed as part of the Excelerate Mobile Application Development Internship**
+
+<img src="screenshots/app/01_splash_screen.png" width="220"/>
 
 ---
 
-# 🏆 Project Badges
+> **Empowering learners through technology by providing a centralized platform for discovering training programs, internships, announcements, and learning opportunities.**
 
-![Flutter](https://img.shields.io/badge/Flutter-3.x-02569B?logo=flutter\&logoColor=white)
-![Dart](https://img.shields.io/badge/Dart-3.x-0175C2?logo=dart\&logoColor=white)
-![Firebase](https://img.shields.io/badge/Firebase-Firestore-FFCA28?logo=firebase\&logoColor=black)
-![Material Design](https://img.shields.io/badge/Material%203-UI-6200EE)
-![Platform](https://img.shields.io/badge/Platform-Android%20%7C%20Web-success)
+</div>
+
+<div align="center">
+
+![Flutter](https://img.shields.io/badge/Flutter-3.x-blue?logo=flutter)
+![Dart](https://img.shields.io/badge/Dart-3.x-0175C2?logo=dart)
+![Firebase](https://img.shields.io/badge/Firebase-Firestore-orange?logo=firebase)
+![JSON](https://img.shields.io/badge/Data-JSON-green)
+![Material 3](https://img.shields.io/badge/UI-Material%203-blueviolet)
+![GitHub](https://img.shields.io/badge/Version%20Control-GitHub-black?logo=github)
+![Platform](https://img.shields.io/badge/Platform-Android-success)
 ![Status](https://img.shields.io/badge/Project-Completed-brightgreen)
-![Internship](https://img.shields.io/badge/Excelerate-Mobile%20Application%20Development-blue)
 
----
+</div>
 
-# 📑 Table of Contents
+## 📑 Table of Contents
 
+### 📱  Project Documentation
+
+* [📌 Project Status](#-project-status)
 * [📱 Project Overview](#-project-overview)
 * [🎯 Purpose of the App](#-purpose-of-the-app)
 * [✨ Features](#-features)
 * [🛠 Technology Stack](#-technology-stack)
 * [🏗 System Architecture](#-system-architecture)
 * [📂 Project Structure](#-project-structure)
-* [📈 Week 4 Enhancements](#-week-4-enhancements)
+* [📈 Final Application Enhancements](#-final-application-enhancements)
 * [🔥 Firebase Collections](#-firebase-collections)
 * [📸 Screenshots](#-screenshots)
 * [👥 Team Contributions](#-team-contributions)
 * [📊 Improvements Based on Evaluation Feedback](#-improvements-based-on-evaluation-feedback)
 * [🎯 Learning Outcomes](#-learning-outcomes)
 * [🚀 Future Enhancements](#-future-enhancements)
+
+---
+
+### 💻 Complete Setup & Installation Guide
+
+* [💻 Required Software](#-required-software)
+* [📦 Flutter Installation](#-flutter-installation)
+* [🤖 Android Studio Setup](#-android-studio-setup)
+* [📥 Repository Cloning](#-repository-cloning)
+* [📚 Dependency Installation](#-dependency-installation)
+* [🔥 Firebase Configuration](#-firebase-configuration)
+* [▶️ Running the Application](#️-running-the-application)
+* [🧪 Testing Guide](#-testing-guide)
+* [🛠 Troubleshooting Common Errors](#-troubleshooting-common-errors)
+* [📞 Support](#-support)
+* [📄 License](#-license)
+
+---
+
+### 🎬 Project Resources
+
+* [🎥 Demo Video](#-demo-video)
+* [📥 Download APK](#-download-apk)
+* [🙏 Acknowledgements](#-acknowledgements)
 * [🏆 Conclusion](#-conclusion)
 
 ---
 
-# 📱 Project Overview
+# 📌 Project Status
 
-The **E-Training App** is a cross-platform mobile application developed using **Flutter** as part of the **Excelerate Mobile Application Development Internship**. The application serves as a centralized digital learning platform where users can discover internships, explore training programs, search learning opportunities, receive important notifications, and manage their learning journey through a clean, responsive, and user-friendly interface.
+> **Project Status:** ✅ Completed
 
-The project demonstrates the practical implementation of modern mobile application development concepts including Firebase integration, dynamic data management, responsive UI design, state-driven interfaces, reusable widgets, and intuitive navigation.
+The **E-Training App** has been successfully developed as part of the **Excelerate Mobile Application Development Internship**. The project fulfills all core internship deliverables, including Firebase Firestore integration, JSON-based dynamic data management, responsive Flutter UI, form validation, and professional project documentation.
 
-Unlike traditional static applications, the E-Training App emphasizes usability, scalability, and maintainability through modular architecture and modern Flutter development practices.
+### Current Release
 
----
+* **Version:** v1.0.0
+* **Platform:** Android
+* **Development Status:** Completed
+* **Documentation Status:** Complete
+* **Repository Status:** Portfolio Ready
+
+
+## 📱 Project Overview
+
+The **E-Training App** is a modern Flutter-based mobile application developed as part of the **Excelerate Mobile Application Development Internship**. The application provides a centralized platform where users can discover training programs, internships, learning resources, and important updates through an intuitive and user-friendly interface.
+
+The project demonstrates the practical implementation of modern mobile application development concepts using **Flutter**, **Firebase Firestore**, and **JSON-based data integration**. It combines responsive UI design, dynamic content loading, cloud database integration, and form validation to deliver a seamless user experience.
+
+The application was designed following modern UI/UX principles with a strong emphasis on performance, usability, maintainability, and scalability. Throughout the four-week internship, the project evolved from wireframes and static interfaces into a fully functional mobile application featuring real-time data storage, dynamic program management, notifications, responsive layouts, and professional application branding.
+
+The E-Training App not only fulfills the internship deliverables but also serves as a portfolio-ready project demonstrating practical experience in Flutter application development, Firebase integration, collaborative software development, version control using GitHub, and professional project documentation.
 
 # 🎯 Purpose of the App
 
-Many learners struggle to find internships, training programs, and career opportunities because information is scattered across multiple platforms. The purpose of the **E-Training App** is to provide a centralized solution that brings these opportunities together into one intuitive platform.
+The primary objective of the **E-Training App** is to provide learners with a centralized digital platform that simplifies access to training programs, internships, learning resources, announcements, and user feedback services.
 
-The application enables users to:
+Traditional methods of sharing training opportunities often rely on multiple communication channels, making it difficult for learners to stay updated and manage available opportunities efficiently. This application addresses that challenge by bringing all essential learning resources into a single mobile platform.
 
-* Securely register and log in.
-* Discover internship and training opportunities.
-* Search and filter programs efficiently.
-* View detailed information about each program.
-* Stay updated through a dedicated notification center.
-* Submit valuable feedback.
-* Experience a modern and responsive mobile application.
+The project focuses on solving the following real-world problems:
 
-The project focuses on delivering both an excellent user experience and a practical demonstration of Flutter application development.
+* Providing a centralized platform for training and internship opportunities.
+* Simplifying the discovery of available programs through search and category filtering.
+* Allowing users to submit valuable feedback directly through the application.
+* Delivering important updates through an integrated Notification Center.
+* Demonstrating modern mobile application development practices using Flutter and Firebase.
 
----
+Beyond meeting the internship objectives, this project also serves as a practical demonstration of industry-standard mobile application development techniques that can be extended into a production-ready learning management platform.
 
 # ✨ Features
 
-## 🔐 Authentication System
+## 🔐 Authentication Module
 
 * Secure User Registration
-* Secure User Login
+* User Login
 * Firebase Firestore Integration
-* Duplicate Email Validation
-* Form Validation
-* Success & Error Dialogs
+* Input Validation
 * Logout Functionality
 
 ---
 
 ## 🏠 Home Dashboard
 
-* Personalized Welcome Section
-* Search Bar
-* Learning Categories
-* Featured Excelerate Opportunities
-* Notification Center
-* Responsive Bottom Navigation
-* Hero Animation
-* Fade Page Transition
+* Modern Dashboard Interface
+* Interactive Category Cards
+* Quick Navigation
+* Responsive Layout
+* Professional UI Design
 
 ---
 
 ## 📚 Program Management
 
 * Dynamic Program Listing
-* JSON-Based Program Data
-* Category Filtering
-* Difficulty Level Filtering
-* Real-Time Search
-* Empty Search Result State
+* JSON-Based Data Loading
 * Program Details Screen
-* Dynamic Content Loading
-* Loading Animation
+* Search Functionality
+* Category Filtering
 
 ---
 
 ## 🔔 Notification Center
 
-* Notification Badge
-* Notification Bottom Sheet
-* Read / Unread Status
-* Mark All as Read
-* Empty Notification State
-* Categorized Notifications
-* Time Labels
+* Dedicated Notification Panel
+* Training Updates
+* Internship Announcements
+* Read/Unread Notification Indicators
+* User-Friendly Bottom Sheet Interface
 
 ---
 
 ## 💬 Feedback Module
 
 * Feedback Submission Form
+* Firebase Firestore Integration
+* Success & Error Dialogs
+* Loading Indicators
 * Form Validation
-* Firebase Firestore Storage
-* Success & Error Messages
 
 ---
 
 ## 👤 User Profile
 
-* User Information Display
-* Profile Navigation
-* Feedback Screen Access
-* Logout Confirmation
+* Profile Information
+* Easy Navigation
+* Feedback Access
+* Secure Logout
 
 ---
 
-## 🎨 User Experience Enhancements
+## 🎨 User Experience
 
-* Responsive User Interface
+* Splash Screen
+* Custom Application Icon
+* Custom Application Name
+* Responsive UI
 * Material Design 3
-* Custom Dialog Components
-* Animated Cards
-* Hero Animations
-* Fade Screen Transitions
-* Improved Loading Indicators
-* Modern Color Theme
-
----
+* Smooth Navigation
+* Consistent Color Theme
+* Loading Animations
+* Error Handling
+* Professional Application Branding
 
 # 🛠 Technology Stack
 
-| Category             | Technology               |
-| -------------------- | ------------------------ |
-| Framework            | Flutter                  |
-| Programming Language | Dart                     |
-| Backend              | Firebase Core            |
-| Cloud Database       | Cloud Firestore          |
-| Local Data           | JSON Assets              |
-| UI Framework         | Material Design 3        |
-| IDE                  | Android Studio / VS Code |
-| Version Control      | Git & GitHub             |
+The E-Training App was developed using modern mobile application development technologies to ensure scalability, maintainability, and a seamless user experience.
+
+| Technology             | Purpose                                       |
+| ---------------------- | --------------------------------------------- |
+| **Flutter**            | Cross-platform mobile application development |
+| **Dart**               | Primary programming language                  |
+| **Firebase Firestore** | Cloud database for user and feedback data     |
+| **Firebase Core**      | Firebase initialization and configuration     |
+| **JSON**               | Dynamic program data management               |
+| **Material Design 3**  | Modern and responsive user interface          |
+| **Git & GitHub**       | Version control and collaborative development |
+| **Android Studio**     | Development environment and Android emulator  |
+| **Visual Studio Code** | Source code editor                            |
+| **FlutterFire CLI**    | Firebase configuration for Flutter            |
 
 ---
+
+### Core Flutter Concepts Implemented
+
+* Stateful & Stateless Widgets
+* Navigation & Routing
+* Form Validation
+* Custom Widgets
+* Dialogs & Bottom Sheets
+* Responsive Layouts
+* Asset Management
+* JSON Parsing
+* Firebase Firestore CRUD Operations
+* Loading States & Error Handling
 
 # 🏗 System Architecture
 
+The application follows a modular Flutter architecture where each feature is separated into dedicated screens, widgets, and data sources. This structure improves maintainability, readability, and future scalability.
+
 ```text
-                        ┌──────────────────────┐
-                        │  Firebase Firestore  │
-                        └──────────┬───────────┘
-                                   │
-                    ┌──────────────▼──────────────┐
-                    │ Authentication & User Data  │
-                    └──────────────┬──────────────┘
-                                   │
-                          Login / Registration
-                                   │
-                                   ▼
-                        ┌──────────────────────┐
-                        │    Home Dashboard    │
-                        └───────┬───────┬──────┘
-                                │       │
-                 ┌──────────────┘       └──────────────┐
-                 ▼                                     ▼
-        Learning Categories                  Notification Center
-                 │                                     │
-                 ▼                                     ▼
-          Program Listing                     Read / Unread Updates
-                 │
-                 ▼
-          Program Details
-                 │
-                 ▼
-             Feedback Module
+                    User
+                      │
+                      ▼
+              Flutter Application
+                      │
+      ┌───────────────┼───────────────┐
+      │                               │
+      ▼                               ▼
+ Flutter UI                    Local JSON Data
+      │                               │
+      │                               ▼
+      │                     Program Listing Module
+      │
+      ▼
+ Navigation & Business Logic
+      │
+      ▼
+ Firebase Firestore
+      │
+      ├──────────────┐
+      ▼              ▼
+ Users Collection   Feedback Collection
 ```
 
+### Architecture Components
+
+#### Presentation Layer
+
+Responsible for displaying the user interface and handling user interactions.
+
+* Splash Screen
+* Login Screen
+* Registration Screen
+* Home Screen
+* Program Listing Screen
+* Program Details Screen
+* Feedback Screen
+* Profile Screen
+
 ---
+
+#### Business Logic Layer
+
+Handles application flow and user interactions.
+
+* Navigation Management
+* Search & Filtering
+* Form Validation
+* Notification Handling
+* Loading & Error States
+
+---
+
+#### Data Layer
+
+Responsible for retrieving and storing application data.
+
+* JSON-based Program Data
+* Firebase Firestore
+* User Information
+* Feedback Records
 
 # 📂 Project Structure
 
-```text
-lib/
-│
-├── data/
-│   └── notifications_data.dart
-│
-├── models/
-│   └── notification_model.dart
-│
-├── screens/
-│   ├── login_screen.dart
-│   ├── registration_screen.dart
-│   ├── home_screen.dart
-│   ├── profile_screen.dart
-│   ├── program_listing_screen.dart
-│   ├── program_details_screen.dart
-│   └── feedback_screen.dart
-│
-├── widgets/
-│   ├── category_card.dart
-│   ├── program_card.dart
-│   ├── custom_dialog.dart
-│   └── page_transition.dart
-│
-├── firebase_options.dart
-│
-└── main.dart
+The project follows a modular Flutter project structure, separating screens, widgets, assets, and Firebase configuration for better maintainability and scalability.
 
-assets/
-└── data/
-    └── programs.json
+```text
+E-Training-App/
+│
+├── android/
+├── ios/
+├── lib/
+│   ├── screens/
+│   │   ├── splash_screen.dart
+│   │   ├── login_screen.dart
+│   │   ├── registration_screen.dart
+│   │   ├── home_screen.dart
+│   │   ├── program_listing_screen.dart
+│   │   ├── program_details_screen.dart
+│   │   ├── profile_screen.dart
+│   │   └── feedback_screen.dart
+│   │
+│   ├── widgets/
+│   │   ├── category_card.dart
+│   │   ├── custom_dialog.dart
+│   │   ├── notification_model.dart
+│   │   └── ...
+│   │
+│   ├── firebase_options.dart
+│   └── main.dart
+│
+├── assets/
+│   ├── data/
+│   │   └── programs.json
+│   │
+│   └── images/
+│       └── app_icon.png
+│
+├── screenshots/
+├── README.md
+├── pubspec.yaml
+└── .gitignore
 ```
 
----
+### Folder Description
 
-# 📈 Week 4 Enhancements
+* **lib/screens/** – Contains all application screens.
+* **lib/widgets/** – Reusable UI components and dialogs.
+* **assets/data/** – JSON data source for training programs.
+* **assets/images/** – Application images and branding assets.
+* **screenshots/** – Screenshots used in documentation.
+* **firebase_options.dart** – Firebase configuration generated using FlutterFire CLI.
 
-### 🔍 Smart Search System
+# 📈 Final Application Enhancements
 
-* Home Screen Search
-* Program Listing Search
-* Dynamic Search Filtering
-* Instant Search Results
-* Empty Search Result Screen
+During the final week of the internship, the application was refined and enhanced to improve usability, performance, documentation, and overall user experience.
 
----
+## 🎨 User Interface Enhancements
 
-### 🔔 Notification Center
-
-* Notification Badge
-* Bottom Sheet Notification Panel
-* Read / Unread Notifications
-* Mark All as Read
-* Empty Notification State
-
----
-
-### 🎨 UI & UX Improvements
-
-* Hero Animation
-* Fade Page Transitions
-* Improved Welcome Dashboard
-* Enhanced Category Cards
-* Better Loading Screens
-* Responsive Design Improvements
+* Implemented a professional animated Splash Screen.
+* Added a custom application icon.
+* Updated the application name for professional branding.
+* Improved overall UI consistency across all screens.
+* Enhanced responsiveness for different screen sizes and font scaling.
 
 ---
 
-### 📚 Program Module Improvements
+## 🔔 Notification System
 
-* Category-Based Navigation
-* Advanced Program Filtering
-* Improved Program Cards
-* Better Program Details
-* Dynamic JSON Integration
-
----
-
-### 🔥 Firebase Improvements
-
-* Firebase Android Configuration
-* Firebase Web Configuration
-* Firestore Integration
-* Improved Authentication Flow
-* Better Error Handling
+* Introduced a dedicated Notification Center.
+* Displayed announcements as notifications.
+* Added read/unread notification indicators.
+* Improved user accessibility using a bottom sheet interface.
 
 ---
 
-### 🧪 Testing & Debugging
+## ⚡ Performance Improvements
 
-* Authentication Testing
-* Search Functionality Testing
-* Navigation Testing
-* Notification System Testing
-* Firebase Connectivity Testing
-* Responsive UI Testing
-* Bug Fixes & Performance Optimization
+* Improved navigation flow.
+* Optimized loading indicators.
+* Enhanced form validation.
+* Fixed feedback navigation issues.
+* Improved overall application stability.
 
 ---
+
+## 📄 Documentation Improvements
+
+* Updated the project README.
+* Organized GitHub repository structure.
+* Added application screenshots.
+* Improved setup instructions.
+* Prepared the project for portfolio presentation.
+
+---
+
+## 🐞 Bug Fixes
+
+* Fixed feedback submission navigation.
+* Improved responsive layouts.
+* Fixed large font scaling issues.
+* Updated splash screen navigation.
+* Improved notification handling.
+* Resolved application branding inconsistencies.
 
 # 🔥 Firebase Collections
 
-## Users Collection
+The application uses **Firebase Firestore** as its cloud database to securely store user information and feedback submissions.
+
+---
+
+## 📂 Users Collection
+
+Stores the registration details of users.
+
+| Field    | Data Type | Description                                             |
+| -------- | --------- | ------------------------------------------------------- |
+| name     | String    | User's full name                                        |
+| email    | String    | Registered email address                                |
+| password | String    | User password *(for internship demonstration purposes)* |
+
+**Example Document**
 
 ```json
 {
@@ -316,563 +418,369 @@ assets/
 
 ---
 
-## Feedback Collection
+## 📂 Feedback Collection
+
+Stores feedback submitted by users.
+
+| Field     | Data Type | Description              |
+| --------- | --------- | ------------------------ |
+| name      | String    | User's name              |
+| email     | String    | Registered email         |
+| feedback  | String    | User feedback            |
+| createdAt | Timestamp | Submission date and time |
+
+**Example Document**
 
 ```json
 {
   "name": "John Doe",
   "email": "john@example.com",
-  "feedback": "Excellent application with a great user experience.",
+  "feedback": "Excellent learning platform!",
   "createdAt": "Timestamp"
 }
 ```
 
 ---
 
+## 🔄 Data Flow
+
+```text
+User Interaction
+        │
+        ▼
+Flutter Form Validation
+        │
+        ▼
+Firebase Firestore
+        │
+        ├──────────────┐
+        ▼              ▼
+Users Collection   Feedback Collection
+```
+
+This integration demonstrates real-time cloud data storage, input validation, and seamless interaction between the Flutter application and Firebase Firestore.
+
 # 📸 Screenshots
 
-> **Add screenshots before final submission.**
+The following screenshots showcase the user interface and key functionalities of the E-Training App.
 
-### 🔐 Authentication
+## 🚀 Splash Screen
 
-* Login Screen
-* Registration Screen
-
-### 🏠 Dashboard
-
-* Home Screen
-* Notification Center
-
-### 📚 Programs
-
-* Program Listing
-* Search Results
-* Program Details
-
-### 👤 User
-
-* Profile Screen
-* Feedback Screen
+<img src="screenshots/app/01_splash_screen.png" width="250"/>
 
 ---
+
+## 🔐 Login Screen
+
+<img src="screenshots/app/02_login_screen.png" width="250"/>
+
+---
+
+## 📝 Registration Screen
+
+<img src="screenshots/app/03_registration_screen.png" width="250"/>
+
+---
+
+## 🏠 Home Dashboard
+
+<img src="screenshots/app/05_01_home_screen.png" width="250"/>
+<img src="screenshots/app/05_02_home_screen.png" width="250"/>
+
+---
+
+## 🔔 Notification Center
+
+<img src="screenshots/app/06_notifications.png" width="250"/>
+
+---
+
+## 📚 Program Listing
+
+<img src="screenshots/app/07_01_program_listing.png" width="250"/>
+<img src="screenshots/app/07_02_program_listing.png" width="250"/>
+
+---
+
+## 📖 Program Details
+
+<img src="screenshots/app/10_01_program_details.png" width="250"/>
+<img src="screenshots/app/10_02_program_details.png" width="250"/>
+
+---
+
+## 💬 Feedback Module
+
+<img src="screenshots/app/12_feedback_form.png" width="250"/>
+
+---
+
+## 👤 User Profile
+
+<img src="screenshots/app/11_profile_screen.png" width="250"/>
+
+---
+
+Additional screenshots demonstrating Firebase integration, validation, loading states, and GitHub repository structure are available in the **screenshots/** directory.
 
 # 👥 Team Contributions
 
-| Module         | Contribution                              |
-| -------------- | ----------------------------------------- |
-| Authentication | Firebase Login, Registration & Validation |
-| Home Dashboard | UI Development, Categories & Search       |
-| Program Module | Program Listing, Search & Filtering       |
-| Notifications  | Badge, Bottom Sheet & Read Status         |
-| Feedback       | Firebase Firestore Integration            |
-| UI/UX          | Animations, Dialogs & Responsive Design   |
-| Testing        | Functional Testing & Bug Fixes            |
+This project was developed collaboratively by a six-member team during the **Excelerate Mobile Application Development Internship**. Responsibilities were distributed based on individual strengths while ensuring continuous collaboration throughout the development lifecycle.
 
----
+| Team Member                | Primary Responsibility                                                                                                                                                                                    |
+| -------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **ShaikMohammad Abraar (Team Leader)** | Project planning, application architecture, Firebase integration, JSON implementation, splash screen,Authentication module, notifications, final integration, bug fixing, APK generation, deployment, and project coordination. |
+| **Alfred Nyongesa**               |  user registration, login functionality, validation, and Firebase user management.                                                                                                  |
+| **Umaima Auwal**               | Home dashboard, program listing, program details, search functionality, category filtering, and JSON data handling.                                                                                       |
+| **Sujith**               | Feedback module, profile screen, Firestore integration, loading indicators, dialogs, and navigation improvements.                                                                                         |
+| **Jeffery Swatson**               | UI/UX enhancements, reusable widgets, responsive layouts, animations, testing support, and application branding.                                                                                          |
+| **Shaik Ruksana**               | GitHub repository management, documentation, README preparation, screenshots, demo video, final report, and submission support.                                                                           |
+
+Throughout the internship, all team members actively participated in discussions, testing, code reviews, and integration activities to ensure the successful completion of the project.
 
 # 📊 Improvements Based on Evaluation Feedback
 
-✅ Integrated Firebase Authentication & Firestore
+The Week 4 submission incorporates improvements based on the evaluation received after Week 3.
 
-✅ Implemented Dynamic JSON-Based Program Management
+### ✅ Documentation Improvements
 
-✅ Added Smart Search Functionality
-
-✅ Introduced Notification Center with Badge & Read Status
-
-✅ Improved UI using Hero Animations & Fade Transitions
-
-✅ Enhanced Navigation Flow & User Experience
-
-✅ Optimized Loading States and Error Handling
-
-✅ Improved Project Documentation & Code Organization
-
-✅ Performed Comprehensive Testing & Bug Fixing
+* Expanded the README with comprehensive project documentation.
+* Added setup and installation instructions.
+* Documented Firebase and JSON integration.
+* Included project architecture and folder structure.
 
 ---
+
+### ✅ Application Enhancements
+
+* Added a professional animated splash screen.
+* Implemented custom application branding.
+* Introduced a dedicated Notification Center.
+* Improved navigation and user experience.
+* Enhanced responsiveness across different screen sizes.
+
+---
+
+### ✅ Technical Improvements
+
+* Improved form validation.
+* Added loading indicators.
+* Enhanced error handling.
+* Optimized Firebase integration.
+* Improved application stability and performance.
+
+---
+
+### ✅ Repository Improvements
+
+* Organized the GitHub repository.
+* Updated documentation.
+* Added screenshots.
+* Maintained meaningful commit history.
+* Prepared the project for long-term portfolio usage.
+
+These enhancements demonstrate the team's commitment to continuous improvement and the application of feedback throughout the internship.
 
 # 🎯 Learning Outcomes
 
-This project provided practical experience in:
+Throughout the four-week internship, the team gained practical experience in designing, developing, testing, documenting, and presenting a complete Flutter application.
+
+## Technical Skills
 
 * Flutter Application Development
+* Dart Programming
 * Firebase Firestore Integration
-* FlutterFire Configuration
-* JSON Data Parsing
-* Search & Filtering Techniques
-* State Management
-* Responsive UI Design
-* Hero Animations & Page Transitions
+* JSON Data Management
 * Form Validation
-* Error Handling & Debugging
-* Git & GitHub Collaboration
-* Team-Based Software Development
+* Responsive UI Design
+* Navigation & Routing
+* Git & GitHub Version Control
+* APK Generation & Deployment
 
 ---
+
+## Professional Skills
+
+* Team Collaboration
+* Project Planning
+* Task Management
+* Documentation
+* Problem Solving
+* Debugging
+* Software Testing
+* Presentation Skills
+
+---
+
+## Internship Outcomes
+
+The internship provided valuable exposure to real-world mobile application development practices and strengthened our understanding of collaborative software engineering, cloud integration, and professional project documentation.
 
 # 🚀 Future Enhancements
 
-* Firebase Cloud Messaging (Push Notifications)
+Although the current version successfully meets the internship objectives, several enhancements are planned for future releases.
+
+### Planned Features
+
+* Firebase Authentication
+* Password Encryption
+* Push Notifications
+* User Profile Editing
 * Dark Mode
-* Program Enrollment System
-* Certificate Downloads
-* Bookmark Favorite Programs
-* AI-Based Program Recommendations
-* User Progress Tracking
+* Bookmark/Favorite Programs
+* Advanced Search & Filtering
+* Offline Data Support
+* Cloud Image Storage
 * Admin Dashboard
-* Offline Support
-* Multi-language Support
 
 ---
 
-# 🏆 Conclusion
+### 🌟 Planned Version 2.0
 
-The **E-Training App** demonstrates the successful development of a modern Flutter application that combines **Firebase Authentication**, **Cloud Firestore**, **dynamic JSON-based program management**, **real-time search**, **notification management**, and a **responsive user interface**.
+The next version of the E-Training App aims to introduce more advanced features and production-ready improvements, including:
 
-The project reflects collaborative teamwork, continuous learning, and the practical implementation of modern mobile application development concepts. It establishes a scalable foundation for future enhancements while delivering an intuitive and engaging learning platform for users.
+* Firebase Authentication
+* Secure Firestore Security Rules
+* Profile Editing
+* Push Notifications
+* Dark Mode
+* Bookmark/Favorite Programs
+* Offline Data Support
+* Clean Architecture (MVVM)
+* State Management using Provider or Riverpod
+* Unit & Widget Testing
+* CI/CD Integration with GitHub Actions
+
+These enhancements will further improve the application's security, scalability, maintainability, and overall user experience while preparing it for real-world deployment.
 
 
-# ⚙️ Part 2 – Complete Setup & Installation Guide
+### Technical Improvements
 
-This guide provides step-by-step instructions to set up, configure, and run the **E-Training App** on both Android and Web platforms.
+* State Management using Provider or Riverpod
+* Clean Architecture / MVVM
+* Unit Testing & Widget Testing
+* CI/CD Pipeline
+* GitHub Actions
+* Improved Firestore Security Rules
+
+---
+
+These enhancements will further improve scalability, security, maintainability, and overall user experience, making the application suitable for production-level deployment.
+
+
+# 💻 Complete Setup & Installation Guide
+
+This guide explains how to set up, configure, and run the **E-Training App** on your local machine.
 
 ---
 
 # 💻 Required Software
 
-Before setting up the project, ensure the following software is installed on your system.
+Before running the project, ensure the following software is installed on your system.
 
-| Software | Recommended Version | Purpose |
-|----------|----------------------|---------|
-| Flutter SDK | Latest Stable | Flutter Framework |
-| Dart SDK | Included with Flutter | Programming Language |
-| Android Studio | Latest | Android Development |
-| VS Code *(Optional)* | Latest | Code Editor |
-| Git | Latest | Version Control |
-| Node.js | LTS Version | Firebase CLI |
-| Firebase CLI | Latest | Firebase Configuration |
-| FlutterFire CLI | Latest | Firebase Integration |
-| Google Chrome | Latest | Web Testing |
+| Software                     | Recommended Version   |
+| ---------------------------- | --------------------- |
+| Flutter SDK                  | Latest Stable Version |
+| Dart SDK                     | Included with Flutter |
+| Android Studio               | Latest Version        |
+| Visual Studio Code           | Latest Version        |
+| Git                          | Latest Version        |
+| Firebase CLI *(Optional)*    | Latest Version        |
+| FlutterFire CLI *(Optional)* | Latest Version        |
 
 ---
 
 # 📦 Flutter Installation
 
-## Step 1 – Download Flutter SDK
+1. Download Flutter from the official Flutter website.
 
-Download the latest stable version of Flutter from the official website:
+2. Extract the Flutter SDK.
 
-https://flutter.dev/docs/get-started/install
+3. Add Flutter to your system PATH.
 
----
-
-## Step 2 – Extract Flutter
-
-Extract Flutter to a preferred directory.
-
-Example:
-
-```text
-C:\src\flutter
-```
-
----
-
-## Step 3 – Add Flutter to System PATH
-
-Add the following directory to your system environment variables:
-
-```text
-C:\src\flutter\bin
-```
-
----
-
-## Step 4 – Verify Installation
-
-Open Command Prompt and run:
+4. Verify the installation by running:
 
 ```bash
 flutter doctor
 ```
 
-Resolve any reported issues before proceeding.
+Ensure all required components are installed successfully before continuing.
 
 ---
 
 # 🤖 Android Studio Setup
 
-## Install Android Studio
+1. Install Android Studio.
 
-Download Android Studio:
+2. Install:
 
-https://developer.android.com/studio
+* Android SDK
+* Android SDK Platform
+* Android SDK Command-line Tools
 
----
+3. Install the Flutter and Dart plugins.
 
-## Install Required Components
+4. Create or start an Android Emulator.
 
-During installation, ensure the following are selected:
-
-- Android SDK
-- Android SDK Platform Tools
-- Android Emulator
-- Android SDK Command-line Tools
-
----
-
-## Install Flutter Plugin
-
-Android Studio
-
-↓
-
-Settings
-
-↓
-
-Plugins
-
-↓
-
-Search **Flutter**
-
-↓
-
-Install
-
-*(The Dart plugin will be installed automatically.)*
-
----
-
-## Verify Setup
-
-Run:
+5. Verify the emulator is detected by Flutter:
 
 ```bash
-flutter doctor
-```
-
-Expected Output:
-
-```text
-✓ Flutter
-✓ Android Toolchain
-✓ Chrome
-✓ Android Studio
-✓ Connected Device
+flutter devices
 ```
 
 ---
 
 # 📥 Repository Cloning
 
-Clone the project repository:
+Clone the project using Git.
 
 ```bash
-https://github.com/SAbraar13/Team1-Excelerate-MADJune26-E-Training-App/edit/main/README.md
+git clone https://github.com/your-username/E-Training-App.git
 ```
 
-Navigate into the project folder:
+Navigate into the project folder.
 
 ```bash
-cd Team1-Excelerate-MADJune26-E-Training-App
+cd E-Training-App
 ```
 
 ---
 
 # 📚 Dependency Installation
 
-Install all required Flutter packages:
+Download all Flutter dependencies.
 
 ```bash
 flutter pub get
 ```
 
-To verify package versions:
-
-```bash
-flutter pub outdated
-```
+Verify that all packages are installed successfully.
 
 ---
 
-# 🔥 Firebase Configuration (Android & Web)
+# 🔥 Firebase Configuration (Android)
 
-## Step 1 – Install Firebase CLI
+The application uses **Firebase Firestore** for cloud data storage.
 
-Install using Node.js:
+### Steps
 
-```bash
-npm install -g firebase-tools
+1. Create a Firebase Project.
+
+2. Register an Android application.
+
+3. Download:
+
+```
+google-services.json
 ```
 
-Verify installation:
+4. Place it inside:
 
-```bash
-firebase --version
+```
+android/app/
 ```
 
----
-
-## Step 2 – Login to Firebase
-
-```bash
-firebase login
-```
-
-Login using your Google account associated with Firebase.
-
----
-
-## Step 3 – Install FlutterFire CLI
-
-```bash
-dart pub global activate flutterfire_cli
-```
-
-If the command is not recognized, add the following directory to your PATH:
-
-```text
-C:\Users\<YourUsername>\AppData\Local\Pub\Cache\bin
-```
-
----
-
-## Step 4 – Configure Firebase
-
-Inside the project folder, execute:
-
-```bash
-flutterfire configure
-```
-
-Select:
-
-- Android
-- Web
-
-This command generates:
-
-```text
-lib/firebase_options.dart
-```
-
----
-
-## Step 5 – Android Configuration
-
-Ensure the following file exists:
-
-```text
-android/app/google-services.json
-```
-
----
-
-## Step 6 – Verify Firebase Packages
-
-Confirm that `pubspec.yaml` contains:
-
-```yaml
-dependencies:
-  firebase_core:
-  cloud_firestore:
-```
-
----
-
-# ▶️ Running the Application
-
-## Android Emulator
-
-Start an emulator and run:
-
-```bash
-flutter run
-```
-
----
-
-## Physical Android Device
-
-Enable Developer Options and USB Debugging.
-
-Run:
-
-```bash
-flutter devices
-```
-
-Then:
-
-```bash
-flutter run
-```
-
----
-
-## Google Chrome
-
-```bash
-flutter run -d chrome
-```
-
----
-
-## Microsoft Edge
-
-```bash
-flutter run -d edge
-```
-
----
-
-# 🧪 Testing Guide
-
-Before submitting the project, perform the following verification tests.
-
----
-
-## Authentication Testing
-
-- ✅ User Registration
-- ✅ Duplicate Email Validation
-- ✅ Login Authentication
-- ✅ Invalid Login Handling
-- ✅ Logout Functionality
-
----
-
-## Home Screen Testing
-
-- ✅ Welcome Section
-- ✅ Search Bar
-- ✅ Learning Categories
-- ✅ Notification Badge
-- ✅ Bottom Navigation
-- ✅ Hero Animation
-
----
-
-## Program Module Testing
-
-- ✅ Program Listing
-- ✅ Category Filtering
-- ✅ Level Filtering
-- ✅ Search Functionality
-- ✅ Program Details
-
----
-
-## Notification Testing
-
-- ✅ Notification Panel Opens
-- ✅ Badge Count Updates
-- ✅ Read/Unread Status
-- ✅ Mark All as Read
-- ✅ Empty Notification State
-
----
-
-## Feedback Testing
-
-- ✅ Form Validation
-- ✅ Firebase Storage
-- ✅ Success Dialog
-- ✅ Error Handling
-
----
-
-## UI Testing
-
-- ✅ Responsive Layout
-- ✅ Animations
-- ✅ Page Transitions
-- ✅ Loading Indicators
-- ✅ No Layout Overflow
-
----
-
-## Performance Testing
-
-- ✅ Fast Screen Navigation
-- ✅ Smooth Animations
-- ✅ No Runtime Exceptions
-- ✅ Stable Firebase Connection
-
----
-
-# 🛠 Troubleshooting Common Errors
-
-## Flutter Command Not Found
-
-### Error
-
-```text
-flutter : command not found
-```
-
-### Solution
-
-Verify Flutter is added to the system PATH.
-
----
-
-## Firebase CLI Not Found
-
-### Error
-
-```text
-firebase : command not found
-```
-
-### Solution
-
-Install Firebase CLI:
-
-```bash
-npm install -g firebase-tools
-```
-
----
-
-## FlutterFire CLI Not Found
-
-### Error
-
-```text
-flutterfire : command not found
-```
-
-### Solution
-
-```bash
-dart pub global activate flutterfire_cli
-```
-
-Then add:
-
-```text
-C:\Users\<YourUsername>\AppData\Local\Pub\Cache\bin
-```
-
-to your PATH.
-
----
-
-## Missing firebase_options.dart
-
-### Error
-
-```text
-No Firebase App '[DEFAULT]' has been created.
-```
-
-### Solution
-
-Run:
+5. Configure Firebase using FlutterFire CLI.
 
 ```bash
 flutterfire configure
@@ -880,118 +788,214 @@ flutterfire configure
 
 This generates:
 
-```text
+```
 lib/firebase_options.dart
 ```
 
----
-
-## Google Services Plugin Conflict
-
-### Error
-
-```text
-Plugin already on classpath with different version
-```
-
-### Solution
-
-Ensure the Google Services plugin is declared only once and uses the same version across Gradle configuration files.
+which initializes Firebase automatically within the application.
 
 ---
 
-## Firestore Permission Denied
+# ▶️ Running the Application
 
-### Error
-
-```text
-PERMISSION_DENIED
-```
-
-### Solution
-
-Verify:
-
-- Firestore Security Rules
-- Firebase Project Configuration
-- Internet Connectivity
-
----
-
-## Dependency Issues
+Ensure an emulator or physical Android device is connected.
 
 Run:
-
-```bash
-flutter clean
-```
-
-Then:
-
-```bash
-flutter pub get
-```
-
----
-
-## Build Failure
-
-Run:
-
-```bash
-flutter clean
-```
-
-```bash
-flutter pub get
-```
 
 ```bash
 flutter run
 ```
 
+To generate a release APK:
+
+```bash
+flutter build apk --release
+```
+
+The generated APK will be located at:
+
+```
+build/app/outputs/flutter-apk/app-release.apk
+```
+
 ---
 
-## Check Project Health
+# 🧪 Testing Guide
+
+Before submission, verify the following features.
+
+### Authentication
+
+* User Registration
+* User Login
+* Logout
+
+---
+
+### Program Module
+
+* Program Listing
+* Search Functionality
+* Category Filtering
+* Program Details
+
+---
+
+### Firebase
+
+* User Registration stored in Firestore
+* Feedback stored in Firestore
+
+---
+
+### User Interface
+
+* Splash Screen
+* Notification Center
+* Responsive Layout
+* Loading Indicators
+* Success & Error Dialogs
+
+---
+
+### Overall Testing
+
+Ensure the application functions correctly without crashes and provides a smooth user experience.
+
+---
+
+# 🛠 Troubleshooting Common Errors
+
+### Flutter packages not found
+
+Run:
 
 ```bash
-flutter doctor
+flutter pub get
 ```
+
+---
+
+### Build issues
+
+Run:
 
 ```bash
-flutter analyze
+flutter clean
+flutter pub get
 ```
+
+Then rebuild the application.
+
+---
+
+### Emulator not detected
+
+Verify available devices.
 
 ```bash
-dart format .
+flutter devices
 ```
 
-Resolve all reported issues before deployment.
+Start an emulator if no devices are listed.
+
+---
+
+### Firebase connection issues
+
+Ensure:
+
+* Firebase is configured correctly.
+* `google-services.json` is present.
+* `firebase_options.dart` exists.
+* Internet connectivity is available.
+
+---
+
+### Gradle build failures
+
+Update Gradle dependencies and execute:
+
+```bash
+flutter clean
+flutter pub get
+```
+
+before rebuilding.
 
 ---
 
 # 📞 Support
 
-For project-related issues or improvements:
+For questions, suggestions, or issues related to the project, please open an issue in the GitHub repository or contact the project contributors.
 
-- Review the project documentation.
-- Verify Firebase configuration.
-- Check Flutter and Dart SDK versions.
-- Ensure all dependencies are installed correctly.
-- Consult the official Flutter and Firebase documentation for advanced troubleshooting.
-
-### Official Resources
-
-- Flutter Documentation: https://docs.flutter.dev/
-- Firebase Documentation: https://firebase.google.com/docs
-- Dart Documentation: https://dart.dev/guides
+We welcome constructive feedback and ideas for future improvements.
 
 ---
 
 # 📄 License
 
-This project was developed as part of the **Excelerate Mobile Application Development Internship** for educational and learning purposes.
+This project was developed for educational purposes as part of the **Excelerate Mobile Application Development Internship**.
 
-© 2026 Team 1 – Excelerate Mobile Application Development Internship
+It may be used for learning, demonstration, and portfolio purposes.
 
-All rights reserved. Unauthorized commercial distribution or reproduction without permission is prohibited.
+For commercial usage or redistribution, please obtain permission from the project contributors.
+
+
+### 🎬 Project Resources
+
+This section provides quick access to all supplementary resources related to the E-Training App.
+
+# 🎥 Demo Video
+
+A complete walkthrough of the application has been prepared to demonstrate the key features and overall workflow of the E-Training App.
+
+The demonstration includes:
+
+* Splash Screen
+* User Registration
+* User Login
+* Home Dashboard
+* Notification Center
+* Program Listing
+* Search & Category Filtering
+* Program Details
+* Feedback Submission
+* Firebase Firestore Integration
+* Profile Management
+* Logout Functionality
+
+> **Demo Video:** *(Add the YouTube or Google Drive link after uploading the recording.)*
+
+# 📥 Download APK
+
+The latest release of the **E-Training App** can be downloaded from the **Releases** section of this repository.
+
+### Latest Release
+
+* **Version:** v1.0.0
+* **Platform:** Android
+* **Build Type:** Release APK
+
+> **APK Download:** *(Add the GitHub Release link after publishing the release.)*
+
+
+# 🙏 Acknowledgements
+
+We sincerely express our gratitude to **Excelerate** for providing the opportunity to participate in the **Mobile Application Development Internship**.
+
+This internship offered valuable hands-on experience in Flutter development, Firebase integration, collaborative software engineering, GitHub version control, project documentation, testing, and mobile application deployment.
+
+We also thank our mentors and team members for their continuous guidance, collaboration, and support throughout the four-week internship journey. Their feedback and encouragement played a significant role in the successful completion of this project.
+
+### 🏆 Conclusion
+
+The **E-Training App** represents the successful completion of a four-week journey through the **Excelerate Mobile Application Development Internship**. From initial planning and UI design to Firebase integration, JSON-based data management, testing, documentation, and deployment, this project demonstrates the complete lifecycle of modern mobile application development.
+
+Throughout the internship, our team transformed a conceptual idea into a fully functional Flutter application featuring user authentication, dynamic program management, real-time cloud data storage with Firebase Firestore, responsive user interfaces, professional branding, and comprehensive technical documentation. Every milestone contributed to strengthening our understanding of software engineering principles, collaborative development, debugging, testing, and project management.
+
+Beyond fulfilling the internship requirements, this project serves as a strong portfolio piece that reflects our commitment to continuous learning, teamwork, problem-solving, and the adoption of industry best practices. It showcases our ability to design, develop, document, and present a production-inspired mobile application using modern technologies.
+
+As we continue our journey as software developers, the E-Training App will serve as a foundation for future enhancements, including secure authentication, advanced state management, improved architecture, enhanced security, and additional user-focused features. The experience gained through this internship has prepared us to confidently take on future academic, professional, and real-world software development challenges.
+
+We sincerely thank **Excelerate** for providing this valuable learning opportunity and enabling us to apply theoretical knowledge in a practical, collaborative, and industry-oriented environment. This project marks an important milestone in our growth as aspiring software engineers and motivates us to continue building innovative, impactful, and user-centric applications.
