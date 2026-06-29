@@ -517,7 +517,7 @@ The following screenshots showcase the user interface and key functionalities of
 
 ## 👤 User Profile
 
-<img src="screenshots/app/10_profile_screen.png" width="250"/>
+<img src="screenshots/app/10_profile.png" width="250"/>
 
 ---
 
