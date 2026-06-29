@@ -977,7 +977,7 @@ The latest release of the **E-Training App** can be downloaded from the **Releas
 * **Platform:** Android
 * **Build Type:** Release APK
 
-> **APK Download:** *(Add the GitHub Release link after publishing the release.)*
+> **APK Download:** *(https://github.com/SAbraar13/Team1-Excelerate-MADJune26-E-Training-App/releases/tag/v1.0.0)*
 
 
 # 🙏 Acknowledgements
