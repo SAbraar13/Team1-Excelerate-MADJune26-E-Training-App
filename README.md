@@ -529,12 +529,12 @@ This project was developed collaboratively by a six-member team during the **Exc
 
 | Team Member                | Primary Responsibility                                                                                                                                                                                    |
 | -------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **ShaikMohammad Abraar (Team Leader)** | Project planning, application architecture, Firebase integration, JSON implementation, splash screen,Authentication module, notifications, final integration, bug fixing, APK generation, deployment, and project coordination. |
+| **ShaikMohammad Abraar (Team Leader)** | Project planning, application architecture, Firebase integration, JSON implementation, splash screen,Authentication module, notifications, final integration, bug fixing, APK generation,demo video, deployment, and project coordination. |
 | **Alfred Nyongesa**               |  user registration, login functionality, validation, and Firebase user management.                                                                                                  |
 | **Umaima Auwal**               | Home dashboard, program listing, program details, search functionality, category filtering, and JSON data handling.                                                                                       |
 | **Sujith**               | Feedback module, profile screen, Firestore integration, loading indicators, dialogs, and navigation improvements.                                                                                         |
 | **Jeffery Swatson**               | UI/UX enhancements, reusable widgets, responsive layouts, animations, testing support, and application branding.                                                                                          |
-| **Shaik Ruksana**               | GitHub repository management, documentation, README preparation, screenshots, demo video, final report, and submission support.                                                                           |
+| **Shaik Ruksana**               | GitHub repository management, documentation, README preparation, screenshots,  final report, and submission support.                                                                           |
 
 Throughout the internship, all team members actively participated in discussions, testing, code reviews, and integration activities to ensure the successful completion of the project.
 
@@ -965,7 +965,7 @@ The demonstration includes:
 * Profile Management
 * Logout Functionality
 
-> **Demo Video:** *(Add the YouTube or Google Drive link after uploading the recording.)*
+> **Demo Video:** *[(Add the YouTube or Google Drive link after uploading the recording.)](https://drive.google.com/file/d/114oGQp8GrXyCd8mJ3rnyQBk_pcLuP8pD/view?usp=drive_link)*
 
 # 📥 Download APK
 
