@@ -965,7 +965,7 @@ The demonstration includes:
 * Profile Management
 * Logout Functionality
 
-> **Demo Video:** *[(Add the YouTube or Google Drive link after uploading the recording.)](https://drive.google.com/file/d/114oGQp8GrXyCd8mJ3rnyQBk_pcLuP8pD/view?usp=drive_link)*
+> **Demo Video:** *(https://drive.google.com/file/d/114oGQp8GrXyCd8mJ3rnyQBk_pcLuP8pD/view?usp=drive_link)*
 
 # 📥 Download APK
 
