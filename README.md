@@ -6,7 +6,7 @@
 
 **Developed as part of the Excelerate Mobile Application Development Internship**
 
-<img src="screenshots/app/01_splash_screen.png" width="220"/>
+<img src="assets\images\app_icon.png" width="220"/>
 
 ---
 
@@ -484,40 +484,40 @@ The following screenshots showcase the user interface and key functionalities of
 
 ## 🏠 Home Dashboard
 
-<img src="screenshots/app/05_01_home_screen.png" width="250"/>
-<img src="screenshots/app/05_02_home_screen.png" width="250"/>
+<img src="screenshots/app/04_01_home_screen.png" width="250"/>
+<img src="screenshots/app/04_02_home_screen.png" width="250"/>
 
 ---
 
 ## 🔔 Notification Center
 
-<img src="screenshots/app/06_notifications.png" width="250"/>
+<img src="screenshots/app/05_notifications.png" width="250"/>
 
 ---
 
 ## 📚 Program Listing
 
-<img src="screenshots/app/07_01_program_listing.png" width="250"/>
-<img src="screenshots/app/07_02_program_listing.png" width="250"/>
+<img src="screenshots/app/06_01_program_listing.png" width="250"/>
+<img src="screenshots/app/06_02_program_listing.png" width="250"/>
 
 ---
 
 ## 📖 Program Details
 
-<img src="screenshots/app/10_01_program_details.png" width="250"/>
-<img src="screenshots/app/10_02_program_details.png" width="250"/>
+<img src="screenshots/app/09_01_program_details.png" width="250"/>
+<img src="screenshots/app/09_02_program_details.png" width="250"/>
 
 ---
 
 ## 💬 Feedback Module
 
-<img src="screenshots/app/12_feedback_form.png" width="250"/>
+<img src="screenshots/app/11_feedback_form.png" width="250"/>
 
 ---
 
 ## 👤 User Profile
 
-<img src="screenshots/app/11_profile_screen.png" width="250"/>
+<img src="screenshots/app/10_profile_screen.png" width="250"/>
 
 ---
 
